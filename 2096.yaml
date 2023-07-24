@@ -16,6 +16,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 🇭🇰 香港🇭🇰, server: hk.missyao.link, port: 443, client-fingerprint: chrome, type: vless, uuid: 31471e39-0bf3-4e3b-a3e4-21c1e012a8ce, tls: true, tfo: false, servername: hk.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hk.missyao.top}}}
+  - {name: 🇸🇬 新加坡🇸🇬, server: sg.missyao.link, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
   - {name: 🇭🇰 香港🇭🇰 2, server: 103.160.204.104, port: 2096, client-fingerprint: chrome, type: vless, uuid: ad17b1d8-b9dc-4bed-aeed-07ecc6494b73, tls: true, tfo: false, servername: hk-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hk-2096.missyao.link}}}
   - {name: 🇭🇰 香港🇭🇰 3, server: 103.160.204.76, port: 2096, client-fingerprint: chrome, type: vless, uuid: ad17b1d8-b9dc-4bed-aeed-07ecc6494b73, tls: true, tfo: false, servername: hk-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hk-2096.missyao.link}}}
   - {name: 🇭🇰 香港🇭🇰 4, server: 103.160.204.145, port: 2096, client-fingerprint: chrome, type: vless, uuid: ad17b1d8-b9dc-4bed-aeed-07ecc6494b73, tls: true, tfo: false, servername: hk-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hk-2096.missyao.link}}}
@@ -25,17 +26,15 @@ proxies:
   - {name: 🇭🇰 香港🇭🇰 8, server: 103.160.204.58, port: 2096, client-fingerprint: chrome, type: vless, uuid: ad17b1d8-b9dc-4bed-aeed-07ecc6494b73, tls: true, tfo: false, servername: hk-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hk-2096.missyao.link}}}
   - {name: 🇭🇰 香港🇭🇰 9, server: 103.160.204.47, port: 2096, client-fingerprint: chrome, type: vless, uuid: ad17b1d8-b9dc-4bed-aeed-07ecc6494b73, tls: true, tfo: false, servername: hk-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hk-2096.missyao.link}}}
   - {name: 🇭🇰 香港🇭🇰 10, server: 103.160.204.32, port: 2096, client-fingerprint: chrome, type: vless, uuid: ad17b1d8-b9dc-4bed-aeed-07ecc6494b73, tls: true, tfo: false, servername: hk-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hk-2096.missyao.link}}}
-  - {name: 🇸🇬 新加坡🇸🇬, server: sg.missyao.link, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 2, server: 8.208.25.197, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 3, server: 8.208.24.67, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 4, server: 8.208.89.79, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 5, server: 8.208.3.45, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 6, server: 8.208.86.31, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 7, server: 8.208.85.54, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 8, server: 8.208.8.145, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 9, server: 8.208.25.38, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 10, server: 8.208.77.8, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
-  - {name: 🇸🇬 新加坡🇸🇬 11, server: 8.208.26.32, port: 443, client-fingerprint: chrome, type: vless, uuid: fa4de1dd-04f6-4074-951b-ed994693707c, tls: true, tfo: false, servername: sg.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg.missyao.top}}}
+  - {name: 🇸🇬 新加坡🇸🇬 2, server: 8.208.14.231, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
+  - {name: 🇸🇬 新加坡🇸🇬 3, server: 8.208.21.217, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
+  - {name: 🇸🇬 新加坡🇸🇬 4, server: 8.208.19.69, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
+  - {name: 🇸🇬 新加坡🇸🇬 5, server: 8.211.8.70, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
+  - {name: 🇸🇬 新加坡🇸🇬 6, server: 8.208.25.38, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
+  - {name: 🇸🇬 新加坡🇸🇬 7, server: 8.211.2.66, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
+  - {name: 🇸🇬 新加坡🇸🇬 8, server: 8.208.24.67, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
+  - {name: 🇸🇬 新加坡🇸🇬 9, server: 8.208.8.145, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
+  - {name: 🇸🇬 新加坡🇸🇬 10, server: 139.59.128.133, port: 2096, client-fingerprint: chrome, type: vless, uuid: 835766ff-8473-41a7-981d-86b89ad5849b, tls: true, tfo: false, servername: sg-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-2096.missyao.link}}}
   - {name: 🇺🇸 美国🇺🇸, server: 47.88.10.227, port: 2096, client-fingerprint: chrome, type: vless, uuid: fcca3d28-431d-4018-aea3-401b3325c92f, tls: true, tfo: false, servername: 45102-0-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 45102-0-2096.missyao.link}}}
   - {name: 🇺🇸 美国🇺🇸 2, server: 47.254.91.72, port: 2096, client-fingerprint: chrome, type: vless, uuid: fcca3d28-431d-4018-aea3-401b3325c92f, tls: true, tfo: false, servername: 45102-0-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 45102-0-2096.missyao.link}}}
   - {name: 🇺🇸 美国🇺🇸 3, server: 47.251.0.251, port: 2096, client-fingerprint: chrome, type: vless, uuid: fcca3d28-431d-4018-aea3-401b3325c92f, tls: true, tfo: false, servername: 45102-0-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 45102-0-2096.missyao.link}}}
@@ -61,6 +60,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇭🇰 香港🇭🇰
+      - 🇸🇬 新加坡🇸🇬
       - 🇭🇰 香港🇭🇰 2
       - 🇭🇰 香港🇭🇰 3
       - 🇭🇰 香港🇭🇰 4
@@ -70,7 +70,6 @@ proxy-groups:
       - 🇭🇰 香港🇭🇰 8
       - 🇭🇰 香港🇭🇰 9
       - 🇭🇰 香港🇭🇰 10
-      - 🇸🇬 新加坡🇸🇬
       - 🇸🇬 新加坡🇸🇬 2
       - 🇸🇬 新加坡🇸🇬 3
       - 🇸🇬 新加坡🇸🇬 4
@@ -80,7 +79,6 @@ proxy-groups:
       - 🇸🇬 新加坡🇸🇬 8
       - 🇸🇬 新加坡🇸🇬 9
       - 🇸🇬 新加坡🇸🇬 10
-      - 🇸🇬 新加坡🇸🇬 11
       - 🇺🇸 美国🇺🇸
       - 🇺🇸 美国🇺🇸 2
       - 🇺🇸 美国🇺🇸 3
@@ -106,6 +104,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇭🇰 香港🇭🇰
+      - 🇸🇬 新加坡🇸🇬
       - 🇭🇰 香港🇭🇰 2
       - 🇭🇰 香港🇭🇰 3
       - 🇭🇰 香港🇭🇰 4
@@ -115,7 +114,6 @@ proxy-groups:
       - 🇭🇰 香港🇭🇰 8
       - 🇭🇰 香港🇭🇰 9
       - 🇭🇰 香港🇭🇰 10
-      - 🇸🇬 新加坡🇸🇬
       - 🇸🇬 新加坡🇸🇬 2
       - 🇸🇬 新加坡🇸🇬 3
       - 🇸🇬 新加坡🇸🇬 4
@@ -125,7 +123,6 @@ proxy-groups:
       - 🇸🇬 新加坡🇸🇬 8
       - 🇸🇬 新加坡🇸🇬 9
       - 🇸🇬 新加坡🇸🇬 10
-      - 🇸🇬 新加坡🇸🇬 11
       - 🇺🇸 美国🇺🇸
       - 🇺🇸 美国🇺🇸 2
       - 🇺🇸 美国🇺🇸 3
@@ -151,6 +148,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇭🇰 香港🇭🇰
+      - 🇸🇬 新加坡🇸🇬
       - 🇭🇰 香港🇭🇰 2
       - 🇭🇰 香港🇭🇰 3
       - 🇭🇰 香港🇭🇰 4
@@ -160,7 +158,6 @@ proxy-groups:
       - 🇭🇰 香港🇭🇰 8
       - 🇭🇰 香港🇭🇰 9
       - 🇭🇰 香港🇭🇰 10
-      - 🇸🇬 新加坡🇸🇬
       - 🇸🇬 新加坡🇸🇬 2
       - 🇸🇬 新加坡🇸🇬 3
       - 🇸🇬 新加坡🇸🇬 4
@@ -170,7 +167,6 @@ proxy-groups:
       - 🇸🇬 新加坡🇸🇬 8
       - 🇸🇬 新加坡🇸🇬 9
       - 🇸🇬 新加坡🇸🇬 10
-      - 🇸🇬 新加坡🇸🇬 11
       - 🇺🇸 美国🇺🇸
       - 🇺🇸 美国🇺🇸 2
       - 🇺🇸 美国🇺🇸 3
@@ -195,6 +191,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 香港🇭🇰
+      - 🇸🇬 新加坡🇸🇬
       - 🇭🇰 香港🇭🇰 2
       - 🇭🇰 香港🇭🇰 3
       - 🇭🇰 香港🇭🇰 4
@@ -204,7 +201,6 @@ proxy-groups:
       - 🇭🇰 香港🇭🇰 8
       - 🇭🇰 香港🇭🇰 9
       - 🇭🇰 香港🇭🇰 10
-      - 🇸🇬 新加坡🇸🇬
       - 🇸🇬 新加坡🇸🇬 2
       - 🇸🇬 新加坡🇸🇬 3
       - 🇸🇬 新加坡🇸🇬 4
@@ -214,7 +210,6 @@ proxy-groups:
       - 🇸🇬 新加坡🇸🇬 8
       - 🇸🇬 新加坡🇸🇬 9
       - 🇸🇬 新加坡🇸🇬 10
-      - 🇸🇬 新加坡🇸🇬 11
       - 🇺🇸 美国🇺🇸
       - 🇺🇸 美国🇺🇸 2
       - 🇺🇸 美国🇺🇸 3
@@ -239,6 +234,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇭🇰 香港🇭🇰
+      - 🇸🇬 新加坡🇸🇬
       - 🇭🇰 香港🇭🇰 2
       - 🇭🇰 香港🇭🇰 3
       - 🇭🇰 香港🇭🇰 4
@@ -248,7 +244,6 @@ proxy-groups:
       - 🇭🇰 香港🇭🇰 8
       - 🇭🇰 香港🇭🇰 9
       - 🇭🇰 香港🇭🇰 10
-      - 🇸🇬 新加坡🇸🇬
       - 🇸🇬 新加坡🇸🇬 2
       - 🇸🇬 新加坡🇸🇬 3
       - 🇸🇬 新加坡🇸🇬 4
@@ -258,7 +253,6 @@ proxy-groups:
       - 🇸🇬 新加坡🇸🇬 8
       - 🇸🇬 新加坡🇸🇬 9
       - 🇸🇬 新加坡🇸🇬 10
-      - 🇸🇬 新加坡🇸🇬 11
       - 🇺🇸 美国🇺🇸
       - 🇺🇸 美国🇺🇸 2
       - 🇺🇸 美国🇺🇸 3
@@ -283,6 +277,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 香港🇭🇰
+      - 🇸🇬 新加坡🇸🇬
       - 🇭🇰 香港🇭🇰 2
       - 🇭🇰 香港🇭🇰 3
       - 🇭🇰 香港🇭🇰 4
@@ -292,7 +287,6 @@ proxy-groups:
       - 🇭🇰 香港🇭🇰 8
       - 🇭🇰 香港🇭🇰 9
       - 🇭🇰 香港🇭🇰 10
-      - 🇸🇬 新加坡🇸🇬
       - 🇸🇬 新加坡🇸🇬 2
       - 🇸🇬 新加坡🇸🇬 3
       - 🇸🇬 新加坡🇸🇬 4
@@ -302,7 +296,6 @@ proxy-groups:
       - 🇸🇬 新加坡🇸🇬 8
       - 🇸🇬 新加坡🇸🇬 9
       - 🇸🇬 新加坡🇸🇬 10
-      - 🇸🇬 新加坡🇸🇬 11
       - 🇺🇸 美国🇺🇸
       - 🇺🇸 美国🇺🇸 2
       - 🇺🇸 美国🇺🇸 3
@@ -328,6 +321,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 香港🇭🇰
+      - 🇸🇬 新加坡🇸🇬
       - 🇭🇰 香港🇭🇰 2
       - 🇭🇰 香港🇭🇰 3
       - 🇭🇰 香港🇭🇰 4
@@ -337,7 +331,6 @@ proxy-groups:
       - 🇭🇰 香港🇭🇰 8
       - 🇭🇰 香港🇭🇰 9
       - 🇭🇰 香港🇭🇰 10
-      - 🇸🇬 新加坡🇸🇬
       - 🇸🇬 新加坡🇸🇬 2
       - 🇸🇬 新加坡🇸🇬 3
       - 🇸🇬 新加坡🇸🇬 4
@@ -347,7 +340,6 @@ proxy-groups:
       - 🇸🇬 新加坡🇸🇬 8
       - 🇸🇬 新加坡🇸🇬 9
       - 🇸🇬 新加坡🇸🇬 10
-      - 🇸🇬 新加坡🇸🇬 11
       - 🇺🇸 美国🇺🇸
       - 🇺🇸 美国🇺🇸 2
       - 🇺🇸 美国🇺🇸 3
@@ -389,6 +381,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 香港🇭🇰
+      - 🇸🇬 新加坡🇸🇬
       - 🇭🇰 香港🇭🇰 2
       - 🇭🇰 香港🇭🇰 3
       - 🇭🇰 香港🇭🇰 4
@@ -398,7 +391,6 @@ proxy-groups:
       - 🇭🇰 香港🇭🇰 8
       - 🇭🇰 香港🇭🇰 9
       - 🇭🇰 香港🇭🇰 10
-      - 🇸🇬 新加坡🇸🇬
       - 🇸🇬 新加坡🇸🇬 2
       - 🇸🇬 新加坡🇸🇬 3
       - 🇸🇬 新加坡🇸🇬 4
@@ -408,7 +400,6 @@ proxy-groups:
       - 🇸🇬 新加坡🇸🇬 8
       - 🇸🇬 新加坡🇸🇬 9
       - 🇸🇬 新加坡🇸🇬 10
-      - 🇸🇬 新加坡🇸🇬 11
       - 🇺🇸 美国🇺🇸
       - 🇺🇸 美国🇺🇸 2
       - 🇺🇸 美国🇺🇸 3
