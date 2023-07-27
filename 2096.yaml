@@ -35,6 +35,16 @@ proxies:
   - {name: 中转Alibaba-8, server: 45102-1-443-h.missyao.link, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d0a8d81-cced-4637-b03a-3090fd1e1d8d, tls: true, tfo: false, servername: 45102-1-443.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 45102-1-443.missyao.link}}}
   - {name: 中转Alibaba-9, server: 45102-1-443-i.missyao.link, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d0a8d81-cced-4637-b03a-3090fd1e1d8d, tls: true, tfo: false, servername: 45102-1-443.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 45102-1-443.missyao.link}}}
   - {name: 中转Alibaba-10, server: 45102-1-443-j.missyao.link, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d0a8d81-cced-4637-b03a-3090fd1e1d8d, tls: true, tfo: false, servername: 45102-1-443.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 45102-1-443.missyao.link}}}
+  - {name: 亚太中转Alibaba-1, server: sg-443-a.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-2, server: sg-443-b.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-3, server: sg-443-c.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-4, server: sg-443-d.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-5, server: sg-443-e.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-6, server: sg-443-f.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-7, server: sg-443-g.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-8, server: sg-443-h.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-9, server: sg-443-i.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
+  - {name: 亚太中转Alibaba-10, server: sg-443-j.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 3548b0c0-6cf8-453a-ac03-3133767f97d0, tls: true, tfo: false, servername: sg-443.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-443.missyao.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -61,6 +71,16 @@ proxy-groups:
       - 中转Alibaba-8
       - 中转Alibaba-9
       - 中转Alibaba-10
+      - 亚太中转Alibaba-1
+      - 亚太中转Alibaba-2
+      - 亚太中转Alibaba-3
+      - 亚太中转Alibaba-4
+      - 亚太中转Alibaba-5
+      - 亚太中转Alibaba-6
+      - 亚太中转Alibaba-7
+      - 亚太中转Alibaba-8
+      - 亚太中转Alibaba-9
+      - 亚太中转Alibaba-10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -87,6 +107,16 @@ proxy-groups:
       - 中转Alibaba-8
       - 中转Alibaba-9
       - 中转Alibaba-10
+      - 亚太中转Alibaba-1
+      - 亚太中转Alibaba-2
+      - 亚太中转Alibaba-3
+      - 亚太中转Alibaba-4
+      - 亚太中转Alibaba-5
+      - 亚太中转Alibaba-6
+      - 亚太中转Alibaba-7
+      - 亚太中转Alibaba-8
+      - 亚太中转Alibaba-9
+      - 亚太中转Alibaba-10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -113,6 +143,16 @@ proxy-groups:
       - 中转Alibaba-8
       - 中转Alibaba-9
       - 中转Alibaba-10
+      - 亚太中转Alibaba-1
+      - 亚太中转Alibaba-2
+      - 亚太中转Alibaba-3
+      - 亚太中转Alibaba-4
+      - 亚太中转Alibaba-5
+      - 亚太中转Alibaba-6
+      - 亚太中转Alibaba-7
+      - 亚太中转Alibaba-8
+      - 亚太中转Alibaba-9
+      - 亚太中转Alibaba-10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -138,6 +178,16 @@ proxy-groups:
       - 中转Alibaba-8
       - 中转Alibaba-9
       - 中转Alibaba-10
+      - 亚太中转Alibaba-1
+      - 亚太中转Alibaba-2
+      - 亚太中转Alibaba-3
+      - 亚太中转Alibaba-4
+      - 亚太中转Alibaba-5
+      - 亚太中转Alibaba-6
+      - 亚太中转Alibaba-7
+      - 亚太中转Alibaba-8
+      - 亚太中转Alibaba-9
+      - 亚太中转Alibaba-10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -163,6 +213,16 @@ proxy-groups:
       - 中转Alibaba-8
       - 中转Alibaba-9
       - 中转Alibaba-10
+      - 亚太中转Alibaba-1
+      - 亚太中转Alibaba-2
+      - 亚太中转Alibaba-3
+      - 亚太中转Alibaba-4
+      - 亚太中转Alibaba-5
+      - 亚太中转Alibaba-6
+      - 亚太中转Alibaba-7
+      - 亚太中转Alibaba-8
+      - 亚太中转Alibaba-9
+      - 亚太中转Alibaba-10
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -188,6 +248,16 @@ proxy-groups:
       - 中转Alibaba-8
       - 中转Alibaba-9
       - 中转Alibaba-10
+      - 亚太中转Alibaba-1
+      - 亚太中转Alibaba-2
+      - 亚太中转Alibaba-3
+      - 亚太中转Alibaba-4
+      - 亚太中转Alibaba-5
+      - 亚太中转Alibaba-6
+      - 亚太中转Alibaba-7
+      - 亚太中转Alibaba-8
+      - 亚太中转Alibaba-9
+      - 亚太中转Alibaba-10
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -214,6 +284,16 @@ proxy-groups:
       - 中转Alibaba-8
       - 中转Alibaba-9
       - 中转Alibaba-10
+      - 亚太中转Alibaba-1
+      - 亚太中转Alibaba-2
+      - 亚太中转Alibaba-3
+      - 亚太中转Alibaba-4
+      - 亚太中转Alibaba-5
+      - 亚太中转Alibaba-6
+      - 亚太中转Alibaba-7
+      - 亚太中转Alibaba-8
+      - 亚太中转Alibaba-9
+      - 亚太中转Alibaba-10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -256,6 +336,16 @@ proxy-groups:
       - 中转Alibaba-8
       - 中转Alibaba-9
       - 中转Alibaba-10
+      - 亚太中转Alibaba-1
+      - 亚太中转Alibaba-2
+      - 亚太中转Alibaba-3
+      - 亚太中转Alibaba-4
+      - 亚太中转Alibaba-5
+      - 亚太中转Alibaba-6
+      - 亚太中转Alibaba-7
+      - 亚太中转Alibaba-8
+      - 亚太中转Alibaba-9
+      - 亚太中转Alibaba-10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
