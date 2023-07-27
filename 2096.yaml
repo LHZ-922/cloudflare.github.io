@@ -15,125 +15,125 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 中转甲骨文-1, server: 130.61.208.198, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-2, server: 130.61.136.42, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-3, server: 150.230.114.184, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-4, server: 141.144.231.86, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-5, server: 150.230.126.165, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-6, server: 141.144.246.72, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-7, server: 140.238.77.87, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-8, server: 150.230.124.177, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-9, server: 141.147.106.72, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
-  - {name: 中转甲骨文-10, server: 130.61.130.218, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-1, server: 130.61.208.198, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-2, server: 130.61.136.42, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-3, server: 150.230.114.184, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-4, server: 141.144.231.86, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-5, server: 150.230.126.165, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-6, server: 141.144.246.72, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-7, server: 140.238.77.87, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-8, server: 150.230.124.177, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-9, server: 141.147.106.72, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
+  - {name: 中转Zenlayer-10, server: 130.61.130.218, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中转甲骨文-1
-      - 中转甲骨文-2
-      - 中转甲骨文-3
-      - 中转甲骨文-4
-      - 中转甲骨文-5
-      - 中转甲骨文-6
-      - 中转甲骨文-7
-      - 中转甲骨文-8
-      - 中转甲骨文-9
-      - 中转甲骨文-10
+      - 中转Zenlayer-1
+      - 中转Zenlayer-2
+      - 中转Zenlayer-3
+      - 中转Zenlayer-4
+      - 中转Zenlayer-5
+      - 中转Zenlayer-6
+      - 中转Zenlayer-7
+      - 中转Zenlayer-8
+      - 中转Zenlayer-9
+      - 中转Zenlayer-10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中转甲骨文-1
-      - 中转甲骨文-2
-      - 中转甲骨文-3
-      - 中转甲骨文-4
-      - 中转甲骨文-5
-      - 中转甲骨文-6
-      - 中转甲骨文-7
-      - 中转甲骨文-8
-      - 中转甲骨文-9
-      - 中转甲骨文-10
+      - 中转Zenlayer-1
+      - 中转Zenlayer-2
+      - 中转Zenlayer-3
+      - 中转Zenlayer-4
+      - 中转Zenlayer-5
+      - 中转Zenlayer-6
+      - 中转Zenlayer-7
+      - 中转Zenlayer-8
+      - 中转Zenlayer-9
+      - 中转Zenlayer-10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转甲骨文-1
-      - 中转甲骨文-2
-      - 中转甲骨文-3
-      - 中转甲骨文-4
-      - 中转甲骨文-5
-      - 中转甲骨文-6
-      - 中转甲骨文-7
-      - 中转甲骨文-8
-      - 中转甲骨文-9
-      - 中转甲骨文-10
+      - 中转Zenlayer-1
+      - 中转Zenlayer-2
+      - 中转Zenlayer-3
+      - 中转Zenlayer-4
+      - 中转Zenlayer-5
+      - 中转Zenlayer-6
+      - 中转Zenlayer-7
+      - 中转Zenlayer-8
+      - 中转Zenlayer-9
+      - 中转Zenlayer-10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转甲骨文-1
-      - 中转甲骨文-2
-      - 中转甲骨文-3
-      - 中转甲骨文-4
-      - 中转甲骨文-5
-      - 中转甲骨文-6
-      - 中转甲骨文-7
-      - 中转甲骨文-8
-      - 中转甲骨文-9
-      - 中转甲骨文-10
+      - 中转Zenlayer-1
+      - 中转Zenlayer-2
+      - 中转Zenlayer-3
+      - 中转Zenlayer-4
+      - 中转Zenlayer-5
+      - 中转Zenlayer-6
+      - 中转Zenlayer-7
+      - 中转Zenlayer-8
+      - 中转Zenlayer-9
+      - 中转Zenlayer-10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 中转甲骨文-1
-      - 中转甲骨文-2
-      - 中转甲骨文-3
-      - 中转甲骨文-4
-      - 中转甲骨文-5
-      - 中转甲骨文-6
-      - 中转甲骨文-7
-      - 中转甲骨文-8
-      - 中转甲骨文-9
-      - 中转甲骨文-10
+      - 中转Zenlayer-1
+      - 中转Zenlayer-2
+      - 中转Zenlayer-3
+      - 中转Zenlayer-4
+      - 中转Zenlayer-5
+      - 中转Zenlayer-6
+      - 中转Zenlayer-7
+      - 中转Zenlayer-8
+      - 中转Zenlayer-9
+      - 中转Zenlayer-10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转甲骨文-1
-      - 中转甲骨文-2
-      - 中转甲骨文-3
-      - 中转甲骨文-4
-      - 中转甲骨文-5
-      - 中转甲骨文-6
-      - 中转甲骨文-7
-      - 中转甲骨文-8
-      - 中转甲骨文-9
-      - 中转甲骨文-10
+      - 中转Zenlayer-1
+      - 中转Zenlayer-2
+      - 中转Zenlayer-3
+      - 中转Zenlayer-4
+      - 中转Zenlayer-5
+      - 中转Zenlayer-6
+      - 中转Zenlayer-7
+      - 中转Zenlayer-8
+      - 中转Zenlayer-9
+      - 中转Zenlayer-10
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转甲骨文-1
-      - 中转甲骨文-2
-      - 中转甲骨文-3
-      - 中转甲骨文-4
-      - 中转甲骨文-5
-      - 中转甲骨文-6
-      - 中转甲骨文-7
-      - 中转甲骨文-8
-      - 中转甲骨文-9
-      - 中转甲骨文-10
+      - 中转Zenlayer-1
+      - 中转Zenlayer-2
+      - 中转Zenlayer-3
+      - 中转Zenlayer-4
+      - 中转Zenlayer-5
+      - 中转Zenlayer-6
+      - 中转Zenlayer-7
+      - 中转Zenlayer-8
+      - 中转Zenlayer-9
+      - 中转Zenlayer-10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,16 +156,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转甲骨文-1
-      - 中转甲骨文-2
-      - 中转甲骨文-3
-      - 中转甲骨文-4
-      - 中转甲骨文-5
-      - 中转甲骨文-6
-      - 中转甲骨文-7
-      - 中转甲骨文-8
-      - 中转甲骨文-9
-      - 中转甲骨文-10
+      - 中转Zenlayer-1
+      - 中转Zenlayer-2
+      - 中转Zenlayer-3
+      - 中转Zenlayer-4
+      - 中转Zenlayer-5
+      - 中转Zenlayer-6
+      - 中转Zenlayer-7
+      - 中转Zenlayer-8
+      - 中转Zenlayer-9
+      - 中转Zenlayer-10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
