@@ -21,12 +21,12 @@ proxies:
   - {name: 亚太中转--2087(自动更新), server: usa.missyao.link, port: 2087, client-fingerprint: randomized, type: vless, uuid: 4029ac8a-cd98-4763-b7e5-2621808c9696, tls: true, tfo: false, servername: usa.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usa.missyao.link}}}
   - {name: 亚太中转--2096(自动更新), server: usa.missyao.link, port: 2096, client-fingerprint: randomized, type: vless, uuid: 4029ac8a-cd98-4763-b7e5-2621808c9696, tls: true, tfo: false, servername: usa.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usa.missyao.link}}}
   - {name: 亚太中转--8443(自动更新), server: usa.missyao.link, port: 8443, client-fingerprint: randomized, type: vless, uuid: 4029ac8a-cd98-4763-b7e5-2621808c9696, tls: true, tfo: false, servername: usa.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usa.missyao.link}}}
-  - {name: cloudflare中转-443(自动更新), server: all.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
-  - {name: cloudflare中转-2053(自动更新), server: all.missyao.link, port: 2053, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
-  - {name: cloudflare中转-2083(自动更新), server: all.missyao.link, port: 2083, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
-  - {name: cloudflare中转-2087(自动更新), server: all.missyao.link, port: 2087, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
-  - {name: cloudflare中转-2096(自动更新), server: all.missyao.link, port: 2096, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
-  - {name: cloudflare中转-8443(自动更新), server: all.missyao.link, port: 8443, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 欧美中转-443(自动更新), server: all.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 欧美中转-2053(自动更新), server: all.missyao.link, port: 2053, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 欧美中转-2083(自动更新), server: all.missyao.link, port: 2083, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 欧美中转-2087(自动更新), server: all.missyao.link, port: 2087, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 欧美中转-2096(自动更新), server: all.missyao.link, port: 2096, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 欧美中转-8443(自动更新), server: all.missyao.link, port: 8443, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -39,12 +39,12 @@ proxy-groups:
       - 亚太中转--2087(自动更新)
       - 亚太中转--2096(自动更新)
       - 亚太中转--8443(自动更新)
-      - cloudflare中转-443(自动更新)
-      - cloudflare中转-2053(自动更新)
-      - cloudflare中转-2083(自动更新)
-      - cloudflare中转-2087(自动更新)
-      - cloudflare中转-2096(自动更新)
-      - cloudflare中转-8443(自动更新)
+      - 欧美中转-443(自动更新)
+      - 欧美中转-2053(自动更新)
+      - 欧美中转-2083(自动更新)
+      - 欧美中转-2087(自动更新)
+      - 欧美中转-2096(自动更新)
+      - 欧美中转-8443(自动更新)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -57,12 +57,12 @@ proxy-groups:
       - 亚太中转--2087(自动更新)
       - 亚太中转--2096(自动更新)
       - 亚太中转--8443(自动更新)
-      - cloudflare中转-443(自动更新)
-      - cloudflare中转-2053(自动更新)
-      - cloudflare中转-2083(自动更新)
-      - cloudflare中转-2087(自动更新)
-      - cloudflare中转-2096(自动更新)
-      - cloudflare中转-8443(自动更新)
+      - 欧美中转-443(自动更新)
+      - 欧美中转-2053(自动更新)
+      - 欧美中转-2083(自动更新)
+      - 欧美中转-2087(自动更新)
+      - 欧美中转-2096(自动更新)
+      - 欧美中转-8443(自动更新)
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -75,12 +75,12 @@ proxy-groups:
       - 亚太中转--2087(自动更新)
       - 亚太中转--2096(自动更新)
       - 亚太中转--8443(自动更新)
-      - cloudflare中转-443(自动更新)
-      - cloudflare中转-2053(自动更新)
-      - cloudflare中转-2083(自动更新)
-      - cloudflare中转-2087(自动更新)
-      - cloudflare中转-2096(自动更新)
-      - cloudflare中转-8443(自动更新)
+      - 欧美中转-443(自动更新)
+      - 欧美中转-2053(自动更新)
+      - 欧美中转-2083(自动更新)
+      - 欧美中转-2087(自动更新)
+      - 欧美中转-2096(自动更新)
+      - 欧美中转-8443(自动更新)
   - name: 📲 电报信息
     type: select
     proxies:
@@ -92,12 +92,12 @@ proxy-groups:
       - 亚太中转--2087(自动更新)
       - 亚太中转--2096(自动更新)
       - 亚太中转--8443(自动更新)
-      - cloudflare中转-443(自动更新)
-      - cloudflare中转-2053(自动更新)
-      - cloudflare中转-2083(自动更新)
-      - cloudflare中转-2087(自动更新)
-      - cloudflare中转-2096(自动更新)
-      - cloudflare中转-8443(自动更新)
+      - 欧美中转-443(自动更新)
+      - 欧美中转-2053(自动更新)
+      - 欧美中转-2083(自动更新)
+      - 欧美中转-2087(自动更新)
+      - 欧美中转-2096(自动更新)
+      - 欧美中转-8443(自动更新)
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -109,12 +109,12 @@ proxy-groups:
       - 亚太中转--2087(自动更新)
       - 亚太中转--2096(自动更新)
       - 亚太中转--8443(自动更新)
-      - cloudflare中转-443(自动更新)
-      - cloudflare中转-2053(自动更新)
-      - cloudflare中转-2083(自动更新)
-      - cloudflare中转-2087(自动更新)
-      - cloudflare中转-2096(自动更新)
-      - cloudflare中转-8443(自动更新)
+      - 欧美中转-443(自动更新)
+      - 欧美中转-2053(自动更新)
+      - 欧美中转-2083(自动更新)
+      - 欧美中转-2087(自动更新)
+      - 欧美中转-2096(自动更新)
+      - 欧美中转-8443(自动更新)
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -126,12 +126,12 @@ proxy-groups:
       - 亚太中转--2087(自动更新)
       - 亚太中转--2096(自动更新)
       - 亚太中转--8443(自动更新)
-      - cloudflare中转-443(自动更新)
-      - cloudflare中转-2053(自动更新)
-      - cloudflare中转-2083(自动更新)
-      - cloudflare中转-2087(自动更新)
-      - cloudflare中转-2096(自动更新)
-      - cloudflare中转-8443(自动更新)
+      - 欧美中转-443(自动更新)
+      - 欧美中转-2053(自动更新)
+      - 欧美中转-2083(自动更新)
+      - 欧美中转-2087(自动更新)
+      - 欧美中转-2096(自动更新)
+      - 欧美中转-8443(自动更新)
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -144,12 +144,12 @@ proxy-groups:
       - 亚太中转--2087(自动更新)
       - 亚太中转--2096(自动更新)
       - 亚太中转--8443(自动更新)
-      - cloudflare中转-443(自动更新)
-      - cloudflare中转-2053(自动更新)
-      - cloudflare中转-2083(自动更新)
-      - cloudflare中转-2087(自动更新)
-      - cloudflare中转-2096(自动更新)
-      - cloudflare中转-8443(自动更新)
+      - 欧美中转-443(自动更新)
+      - 欧美中转-2053(自动更新)
+      - 欧美中转-2083(自动更新)
+      - 欧美中转-2087(自动更新)
+      - 欧美中转-2096(自动更新)
+      - 欧美中转-8443(自动更新)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -178,12 +178,12 @@ proxy-groups:
       - 亚太中转--2087(自动更新)
       - 亚太中转--2096(自动更新)
       - 亚太中转--8443(自动更新)
-      - cloudflare中转-443(自动更新)
-      - cloudflare中转-2053(自动更新)
-      - cloudflare中转-2083(自动更新)
-      - cloudflare中转-2087(自动更新)
-      - cloudflare中转-2096(自动更新)
-      - cloudflare中转-8443(自动更新)
+      - 欧美中转-443(自动更新)
+      - 欧美中转-2053(自动更新)
+      - 欧美中转-2083(自动更新)
+      - 欧美中转-2087(自动更新)
+      - 欧美中转-2096(自动更新)
+      - 欧美中转-8443(自动更新)
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
