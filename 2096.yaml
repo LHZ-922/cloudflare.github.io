@@ -15,6 +15,12 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
+  - {name: 🇸🇬 cloudflare中转-443(自动更新), server: all.missyao.link, port: 443, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 🇸🇬 cloudflare中转-2053(自动更新), server: all.missyao.link, port: 2053, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 🇸🇬 cloudflare中转-2083(自动更新), server: all.missyao.link, port: 2083, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 🇸🇬 cloudflare中转-2087(自动更新), server: all.missyao.link, port: 2087, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 🇸🇬 cloudflare中转-2096(自动更新), server: all.missyao.link, port: 2096, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
+  - {name: 🇸🇬 cloudflare中转-8443(自动更新), server: all.missyao.link, port: 8443, client-fingerprint: randomized, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, servername: all.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all.missyao.link}}}
   - {name: 中转Oracle-1, server: 31898-1-2096-a.missyao.top, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
   - {name: 中转Oracle-2, server: 31898-1-2096-b.missyao.top, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
   - {name: 中转Oracle-3, server: 31898-1-2096-c.missyao.top, port: 443, client-fingerprint: randomized, type: vless, uuid: b1f88c2f-818a-4855-83b9-f30a7652f2ae, tls: true, tfo: false, servername: 31898-1-2096.missyao.link, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 31898-1-2096.missyao.link}}}
@@ -51,6 +57,12 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇸🇬 cloudflare中转-443(自动更新)
+      - 🇸🇬 cloudflare中转-2053(自动更新)
+      - 🇸🇬 cloudflare中转-2083(自动更新)
+      - 🇸🇬 cloudflare中转-2087(自动更新)
+      - 🇸🇬 cloudflare中转-2096(自动更新)
+      - 🇸🇬 cloudflare中转-8443(自动更新)
       - 中转Oracle-1
       - 中转Oracle-2
       - 中转Oracle-3
@@ -87,6 +99,12 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇸🇬 cloudflare中转-443(自动更新)
+      - 🇸🇬 cloudflare中转-2053(自动更新)
+      - 🇸🇬 cloudflare中转-2083(自动更新)
+      - 🇸🇬 cloudflare中转-2087(自动更新)
+      - 🇸🇬 cloudflare中转-2096(自动更新)
+      - 🇸🇬 cloudflare中转-8443(自动更新)
       - 中转Oracle-1
       - 中转Oracle-2
       - 中转Oracle-3
@@ -123,6 +141,12 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇸🇬 cloudflare中转-443(自动更新)
+      - 🇸🇬 cloudflare中转-2053(自动更新)
+      - 🇸🇬 cloudflare中转-2083(自动更新)
+      - 🇸🇬 cloudflare中转-2087(自动更新)
+      - 🇸🇬 cloudflare中转-2096(自动更新)
+      - 🇸🇬 cloudflare中转-8443(自动更新)
       - 中转Oracle-1
       - 中转Oracle-2
       - 中转Oracle-3
@@ -158,6 +182,12 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇸🇬 cloudflare中转-443(自动更新)
+      - 🇸🇬 cloudflare中转-2053(自动更新)
+      - 🇸🇬 cloudflare中转-2083(自动更新)
+      - 🇸🇬 cloudflare中转-2087(自动更新)
+      - 🇸🇬 cloudflare中转-2096(自动更新)
+      - 🇸🇬 cloudflare中转-8443(自动更新)
       - 中转Oracle-1
       - 中转Oracle-2
       - 中转Oracle-3
@@ -193,6 +223,12 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇸🇬 cloudflare中转-443(自动更新)
+      - 🇸🇬 cloudflare中转-2053(自动更新)
+      - 🇸🇬 cloudflare中转-2083(自动更新)
+      - 🇸🇬 cloudflare中转-2087(自动更新)
+      - 🇸🇬 cloudflare中转-2096(自动更新)
+      - 🇸🇬 cloudflare中转-8443(自动更新)
       - 中转Oracle-1
       - 中转Oracle-2
       - 中转Oracle-3
@@ -228,6 +264,12 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇸🇬 cloudflare中转-443(自动更新)
+      - 🇸🇬 cloudflare中转-2053(自动更新)
+      - 🇸🇬 cloudflare中转-2083(自动更新)
+      - 🇸🇬 cloudflare中转-2087(自动更新)
+      - 🇸🇬 cloudflare中转-2096(自动更新)
+      - 🇸🇬 cloudflare中转-8443(自动更新)
       - 中转Oracle-1
       - 中转Oracle-2
       - 中转Oracle-3
@@ -264,6 +306,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇸🇬 cloudflare中转-443(自动更新)
+      - 🇸🇬 cloudflare中转-2053(自动更新)
+      - 🇸🇬 cloudflare中转-2083(自动更新)
+      - 🇸🇬 cloudflare中转-2087(自动更新)
+      - 🇸🇬 cloudflare中转-2096(自动更新)
+      - 🇸🇬 cloudflare中转-8443(自动更新)
       - 中转Oracle-1
       - 中转Oracle-2
       - 中转Oracle-3
@@ -316,6 +364,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇸🇬 cloudflare中转-443(自动更新)
+      - 🇸🇬 cloudflare中转-2053(自动更新)
+      - 🇸🇬 cloudflare中转-2083(自动更新)
+      - 🇸🇬 cloudflare中转-2087(自动更新)
+      - 🇸🇬 cloudflare中转-2096(自动更新)
+      - 🇸🇬 cloudflare中转-8443(自动更新)
       - 中转Oracle-1
       - 中转Oracle-2
       - 中转Oracle-3
