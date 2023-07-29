@@ -27,6 +27,12 @@ proxies:
   - {name: 欧美中转-2087-自动更新, server: usw-uk-ed.missyao.top, port: 2087, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
   - {name: 欧美中转-2083-自动更新, server: usw-uk-ed.missyao.top, port: 2083, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
   - {name: 欧美中转-2053-自动更新, server: usw-uk-ed.missyao.top, port: 2053, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
+  - {name: All-2053-自动更新, server: all.missyao.top, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: All-2083-自动更新, server: all.missyao.top, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: All-2087-自动更新, server: all.missyao.top, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: All-2096-自动更新, server: all.missyao.top, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: All-443-自动更新, server: all.missyao.top, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: All-8443-自动更新, server: all.missyao.top, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -45,6 +51,12 @@ proxy-groups:
       - 欧美中转-2087-自动更新
       - 欧美中转-2083-自动更新
       - 欧美中转-2053-自动更新
+      - All-2053-自动更新
+      - All-2083-自动更新
+      - All-2087-自动更新
+      - All-2096-自动更新
+      - All-443-自动更新
+      - All-8443-自动更新
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -63,6 +75,12 @@ proxy-groups:
       - 欧美中转-2087-自动更新
       - 欧美中转-2083-自动更新
       - 欧美中转-2053-自动更新
+      - All-2053-自动更新
+      - All-2083-自动更新
+      - All-2087-自动更新
+      - All-2096-自动更新
+      - All-443-自动更新
+      - All-8443-自动更新
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -81,6 +99,12 @@ proxy-groups:
       - 欧美中转-2087-自动更新
       - 欧美中转-2083-自动更新
       - 欧美中转-2053-自动更新
+      - All-2053-自动更新
+      - All-2083-自动更新
+      - All-2087-自动更新
+      - All-2096-自动更新
+      - All-443-自动更新
+      - All-8443-自动更新
   - name: 📲 电报信息
     type: select
     proxies:
@@ -98,6 +122,12 @@ proxy-groups:
       - 欧美中转-2087-自动更新
       - 欧美中转-2083-自动更新
       - 欧美中转-2053-自动更新
+      - All-2053-自动更新
+      - All-2083-自动更新
+      - All-2087-自动更新
+      - All-2096-自动更新
+      - All-443-自动更新
+      - All-8443-自动更新
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -115,6 +145,12 @@ proxy-groups:
       - 欧美中转-2087-自动更新
       - 欧美中转-2083-自动更新
       - 欧美中转-2053-自动更新
+      - All-2053-自动更新
+      - All-2083-自动更新
+      - All-2087-自动更新
+      - All-2096-自动更新
+      - All-443-自动更新
+      - All-8443-自动更新
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -132,6 +168,12 @@ proxy-groups:
       - 欧美中转-2087-自动更新
       - 欧美中转-2083-自动更新
       - 欧美中转-2053-自动更新
+      - All-2053-自动更新
+      - All-2083-自动更新
+      - All-2087-自动更新
+      - All-2096-自动更新
+      - All-443-自动更新
+      - All-8443-自动更新
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -150,6 +192,12 @@ proxy-groups:
       - 欧美中转-2087-自动更新
       - 欧美中转-2083-自动更新
       - 欧美中转-2053-自动更新
+      - All-2053-自动更新
+      - All-2083-自动更新
+      - All-2087-自动更新
+      - All-2096-自动更新
+      - All-443-自动更新
+      - All-8443-自动更新
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -184,6 +232,12 @@ proxy-groups:
       - 欧美中转-2087-自动更新
       - 欧美中转-2083-自动更新
       - 欧美中转-2053-自动更新
+      - All-2053-自动更新
+      - All-2083-自动更新
+      - All-2087-自动更新
+      - All-2096-自动更新
+      - All-443-自动更新
+      - All-8443-自动更新
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
