@@ -15,621 +15,189 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 亚太中转-8443-自动更新, server: japan.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-443-自动更新, server: japan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2096-自动更新, server: japan.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2087-自动更新, server: japan.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2083-自动更新, server: japan.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2053-自动更新, server: japan.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 欧美中转-8443-自动更新, server: japan.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-443-自动更新, server: japan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2096-自动更新, server: japan.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2087-自动更新, server: japan.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2083-自动更新, server: japan.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2053-自动更新, server: japan.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: All-2053-自动更新, server: japan.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2083-自动更新, server: japan.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2087-自动更新, server: japan.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2096-自动更新, server: japan.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-443-自动更新, server: japan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-8443-自动更新, server: japan.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 亚太中转-8443-自动更新 2, server: malaysia.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-443-自动更新 2, server: malaysia.com, port: 443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2096-自动更新 2, server: malaysia.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2087-自动更新 2, server: malaysia.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2083-自动更新 2, server: malaysia.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2053-自动更新 2, server: malaysia.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 欧美中转-8443-自动更新 2, server: malaysia.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-443-自动更新 2, server: malaysia.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2096-自动更新 2, server: malaysia.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2087-自动更新 2, server: malaysia.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2083-自动更新 2, server: malaysia.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2053-自动更新 2, server: malaysia.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: All-2053-自动更新 2, server: malaysia.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2083-自动更新 2, server: malaysia.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2087-自动更新 2, server: malaysia.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2096-自动更新 2, server: malaysia.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-443-自动更新 2, server: malaysia.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-8443-自动更新 2, server: malaysia.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 亚太中转-8443-自动更新 3, server: singapore.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-443-自动更新 3, server: singapore.com, port: 443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2096-自动更新 3, server: singapore.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2087-自动更新 3, server: singapore.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2083-自动更新 3, server: singapore.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2053-自动更新 3, server: singapore.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 欧美中转-8443-自动更新 3, server: singapore.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-443-自动更新 3, server: singapore.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2096-自动更新 3, server: singapore.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2087-自动更新 3, server: singapore.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2083-自动更新 3, server: singapore.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2053-自动更新 3, server: singapore.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: All-2053-自动更新 3, server: singapore.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2083-自动更新 3, server: singapore.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2087-自动更新 3, server: singapore.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2096-自动更新 3, server: singapore.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-443-自动更新 3, server: singapore.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-8443-自动更新 3, server: singapore.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 亚太中转-8443-自动更新 4, server: time.is, port: 8443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-443-自动更新 4, server: time.is, port: 443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2096-自动更新 4, server: time.is, port: 2096, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2087-自动更新 4, server: time.is, port: 2087, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2083-自动更新 4, server: time.is, port: 2083, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 亚太中转-2053-自动更新 4, server: time.is, port: 2053, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 欧美中转-8443-自动更新 4, server: time.is, port: 8443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-443-自动更新 4, server: time.is, port: 443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2096-自动更新 4, server: time.is, port: 2096, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2087-自动更新 4, server: time.is, port: 2087, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2083-自动更新 4, server: time.is, port: 2083, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 欧美中转-2053-自动更新 4, server: time.is, port: 2053, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: All-2053-自动更新 4, server: time.is, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2083-自动更新 4, server: time.is, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2087-自动更新 4, server: time.is, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-2096-自动更新 4, server: time.is, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-443-自动更新 4, server: time.is, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: All-8443-自动更新 4, server: time.is, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: japan.com中转-端口443, server: japan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
+  - {name: japan.com中转-端口8443, server: japan.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
+  - {name: japan.com中转-端口2053, server: japan.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
+  - {name: japan.com中转-端口2083, server: japan.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
+  - {name: japan.com中转-端口2087, server: japan.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
+  - {name: japan.com中转-端口2096, server: japan.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
+  - {name: www.hugedomains.com中转-端口443, server: www.hugedomains.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
+  - {name: www.hugedomains.com中转-端口8443, server: www.hugedomains.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
+  - {name: www.hugedomains.com中转-端口2053, server: www.hugedomains.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
+  - {name: www.hugedomains.com中转-端口2083, server: www.hugedomains.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
+  - {name: www.hugedomains.com中转-端口2087, server: www.hugedomains.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
+  - {name: www.hugedomains.com中转-端口2096, server: www.hugedomains.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, servername: usw-uk-ed.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
+  - {name: singapore.com中转-端口443, server: singapore.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: singapore.com中转-端口8443, server: singapore.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: singapore.com中转-端口2053, server: singapore.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: singapore.com中转-端口2083, server: singapore.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: singapore.com中转-端口2087, server: singapore.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
+  - {name: singapore.com中转-端口2096, server: singapore.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, servername: all-ipv6-ipv4.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 亚太中转-8443-自动更新
-      - 亚太中转-443-自动更新
-      - 亚太中转-2096-自动更新
-      - 亚太中转-2087-自动更新
-      - 亚太中转-2083-自动更新
-      - 亚太中转-2053-自动更新
-      - 欧美中转-8443-自动更新
-      - 欧美中转-443-自动更新
-      - 欧美中转-2096-自动更新
-      - 欧美中转-2087-自动更新
-      - 欧美中转-2083-自动更新
-      - 欧美中转-2053-自动更新
-      - All-2053-自动更新
-      - All-2083-自动更新
-      - All-2087-自动更新
-      - All-2096-自动更新
-      - All-443-自动更新
-      - All-8443-自动更新
-      - 亚太中转-8443-自动更新 2
-      - 亚太中转-443-自动更新 2
-      - 亚太中转-2096-自动更新 2
-      - 亚太中转-2087-自动更新 2
-      - 亚太中转-2083-自动更新 2
-      - 亚太中转-2053-自动更新 2
-      - 欧美中转-8443-自动更新 2
-      - 欧美中转-443-自动更新 2
-      - 欧美中转-2096-自动更新 2
-      - 欧美中转-2087-自动更新 2
-      - 欧美中转-2083-自动更新 2
-      - 欧美中转-2053-自动更新 2
-      - All-2053-自动更新 2
-      - All-2083-自动更新 2
-      - All-2087-自动更新 2
-      - All-2096-自动更新 2
-      - All-443-自动更新 2
-      - All-8443-自动更新 2
-      - 亚太中转-8443-自动更新 3
-      - 亚太中转-443-自动更新 3
-      - 亚太中转-2096-自动更新 3
-      - 亚太中转-2087-自动更新 3
-      - 亚太中转-2083-自动更新 3
-      - 亚太中转-2053-自动更新 3
-      - 欧美中转-8443-自动更新 3
-      - 欧美中转-443-自动更新 3
-      - 欧美中转-2096-自动更新 3
-      - 欧美中转-2087-自动更新 3
-      - 欧美中转-2083-自动更新 3
-      - 欧美中转-2053-自动更新 3
-      - All-2053-自动更新 3
-      - All-2083-自动更新 3
-      - All-2087-自动更新 3
-      - All-2096-自动更新 3
-      - All-443-自动更新 3
-      - All-8443-自动更新 3
-      - 亚太中转-8443-自动更新 4
-      - 亚太中转-443-自动更新 4
-      - 亚太中转-2096-自动更新 4
-      - 亚太中转-2087-自动更新 4
-      - 亚太中转-2083-自动更新 4
-      - 亚太中转-2053-自动更新 4
-      - 欧美中转-8443-自动更新 4
-      - 欧美中转-443-自动更新 4
-      - 欧美中转-2096-自动更新 4
-      - 欧美中转-2087-自动更新 4
-      - 欧美中转-2083-自动更新 4
-      - 欧美中转-2053-自动更新 4
-      - All-2053-自动更新 4
-      - All-2083-自动更新 4
-      - All-2087-自动更新 4
-      - All-2096-自动更新 4
-      - All-443-自动更新 4
-      - All-8443-自动更新 4
+      - japan.com中转-端口443
+      - japan.com中转-端口8443
+      - japan.com中转-端口2053
+      - japan.com中转-端口2083
+      - japan.com中转-端口2087
+      - japan.com中转-端口2096
+      - www.hugedomains.com中转-端口443
+      - www.hugedomains.com中转-端口8443
+      - www.hugedomains.com中转-端口2053
+      - www.hugedomains.com中转-端口2083
+      - www.hugedomains.com中转-端口2087
+      - www.hugedomains.com中转-端口2096
+      - singapore.com中转-端口443
+      - singapore.com中转-端口8443
+      - singapore.com中转-端口2053
+      - singapore.com中转-端口2083
+      - singapore.com中转-端口2087
+      - singapore.com中转-端口2096
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 亚太中转-8443-自动更新
-      - 亚太中转-443-自动更新
-      - 亚太中转-2096-自动更新
-      - 亚太中转-2087-自动更新
-      - 亚太中转-2083-自动更新
-      - 亚太中转-2053-自动更新
-      - 欧美中转-8443-自动更新
-      - 欧美中转-443-自动更新
-      - 欧美中转-2096-自动更新
-      - 欧美中转-2087-自动更新
-      - 欧美中转-2083-自动更新
-      - 欧美中转-2053-自动更新
-      - All-2053-自动更新
-      - All-2083-自动更新
-      - All-2087-自动更新
-      - All-2096-自动更新
-      - All-443-自动更新
-      - All-8443-自动更新
-      - 亚太中转-8443-自动更新 2
-      - 亚太中转-443-自动更新 2
-      - 亚太中转-2096-自动更新 2
-      - 亚太中转-2087-自动更新 2
-      - 亚太中转-2083-自动更新 2
-      - 亚太中转-2053-自动更新 2
-      - 欧美中转-8443-自动更新 2
-      - 欧美中转-443-自动更新 2
-      - 欧美中转-2096-自动更新 2
-      - 欧美中转-2087-自动更新 2
-      - 欧美中转-2083-自动更新 2
-      - 欧美中转-2053-自动更新 2
-      - All-2053-自动更新 2
-      - All-2083-自动更新 2
-      - All-2087-自动更新 2
-      - All-2096-自动更新 2
-      - All-443-自动更新 2
-      - All-8443-自动更新 2
-      - 亚太中转-8443-自动更新 3
-      - 亚太中转-443-自动更新 3
-      - 亚太中转-2096-自动更新 3
-      - 亚太中转-2087-自动更新 3
-      - 亚太中转-2083-自动更新 3
-      - 亚太中转-2053-自动更新 3
-      - 欧美中转-8443-自动更新 3
-      - 欧美中转-443-自动更新 3
-      - 欧美中转-2096-自动更新 3
-      - 欧美中转-2087-自动更新 3
-      - 欧美中转-2083-自动更新 3
-      - 欧美中转-2053-自动更新 3
-      - All-2053-自动更新 3
-      - All-2083-自动更新 3
-      - All-2087-自动更新 3
-      - All-2096-自动更新 3
-      - All-443-自动更新 3
-      - All-8443-自动更新 3
-      - 亚太中转-8443-自动更新 4
-      - 亚太中转-443-自动更新 4
-      - 亚太中转-2096-自动更新 4
-      - 亚太中转-2087-自动更新 4
-      - 亚太中转-2083-自动更新 4
-      - 亚太中转-2053-自动更新 4
-      - 欧美中转-8443-自动更新 4
-      - 欧美中转-443-自动更新 4
-      - 欧美中转-2096-自动更新 4
-      - 欧美中转-2087-自动更新 4
-      - 欧美中转-2083-自动更新 4
-      - 欧美中转-2053-自动更新 4
-      - All-2053-自动更新 4
-      - All-2083-自动更新 4
-      - All-2087-自动更新 4
-      - All-2096-自动更新 4
-      - All-443-自动更新 4
-      - All-8443-自动更新 4
+      - japan.com中转-端口443
+      - japan.com中转-端口8443
+      - japan.com中转-端口2053
+      - japan.com中转-端口2083
+      - japan.com中转-端口2087
+      - japan.com中转-端口2096
+      - www.hugedomains.com中转-端口443
+      - www.hugedomains.com中转-端口8443
+      - www.hugedomains.com中转-端口2053
+      - www.hugedomains.com中转-端口2083
+      - www.hugedomains.com中转-端口2087
+      - www.hugedomains.com中转-端口2096
+      - singapore.com中转-端口443
+      - singapore.com中转-端口8443
+      - singapore.com中转-端口2053
+      - singapore.com中转-端口2083
+      - singapore.com中转-端口2087
+      - singapore.com中转-端口2096
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太中转-8443-自动更新
-      - 亚太中转-443-自动更新
-      - 亚太中转-2096-自动更新
-      - 亚太中转-2087-自动更新
-      - 亚太中转-2083-自动更新
-      - 亚太中转-2053-自动更新
-      - 欧美中转-8443-自动更新
-      - 欧美中转-443-自动更新
-      - 欧美中转-2096-自动更新
-      - 欧美中转-2087-自动更新
-      - 欧美中转-2083-自动更新
-      - 欧美中转-2053-自动更新
-      - All-2053-自动更新
-      - All-2083-自动更新
-      - All-2087-自动更新
-      - All-2096-自动更新
-      - All-443-自动更新
-      - All-8443-自动更新
-      - 亚太中转-8443-自动更新 2
-      - 亚太中转-443-自动更新 2
-      - 亚太中转-2096-自动更新 2
-      - 亚太中转-2087-自动更新 2
-      - 亚太中转-2083-自动更新 2
-      - 亚太中转-2053-自动更新 2
-      - 欧美中转-8443-自动更新 2
-      - 欧美中转-443-自动更新 2
-      - 欧美中转-2096-自动更新 2
-      - 欧美中转-2087-自动更新 2
-      - 欧美中转-2083-自动更新 2
-      - 欧美中转-2053-自动更新 2
-      - All-2053-自动更新 2
-      - All-2083-自动更新 2
-      - All-2087-自动更新 2
-      - All-2096-自动更新 2
-      - All-443-自动更新 2
-      - All-8443-自动更新 2
-      - 亚太中转-8443-自动更新 3
-      - 亚太中转-443-自动更新 3
-      - 亚太中转-2096-自动更新 3
-      - 亚太中转-2087-自动更新 3
-      - 亚太中转-2083-自动更新 3
-      - 亚太中转-2053-自动更新 3
-      - 欧美中转-8443-自动更新 3
-      - 欧美中转-443-自动更新 3
-      - 欧美中转-2096-自动更新 3
-      - 欧美中转-2087-自动更新 3
-      - 欧美中转-2083-自动更新 3
-      - 欧美中转-2053-自动更新 3
-      - All-2053-自动更新 3
-      - All-2083-自动更新 3
-      - All-2087-自动更新 3
-      - All-2096-自动更新 3
-      - All-443-自动更新 3
-      - All-8443-自动更新 3
-      - 亚太中转-8443-自动更新 4
-      - 亚太中转-443-自动更新 4
-      - 亚太中转-2096-自动更新 4
-      - 亚太中转-2087-自动更新 4
-      - 亚太中转-2083-自动更新 4
-      - 亚太中转-2053-自动更新 4
-      - 欧美中转-8443-自动更新 4
-      - 欧美中转-443-自动更新 4
-      - 欧美中转-2096-自动更新 4
-      - 欧美中转-2087-自动更新 4
-      - 欧美中转-2083-自动更新 4
-      - 欧美中转-2053-自动更新 4
-      - All-2053-自动更新 4
-      - All-2083-自动更新 4
-      - All-2087-自动更新 4
-      - All-2096-自动更新 4
-      - All-443-自动更新 4
-      - All-8443-自动更新 4
+      - japan.com中转-端口443
+      - japan.com中转-端口8443
+      - japan.com中转-端口2053
+      - japan.com中转-端口2083
+      - japan.com中转-端口2087
+      - japan.com中转-端口2096
+      - www.hugedomains.com中转-端口443
+      - www.hugedomains.com中转-端口8443
+      - www.hugedomains.com中转-端口2053
+      - www.hugedomains.com中转-端口2083
+      - www.hugedomains.com中转-端口2087
+      - www.hugedomains.com中转-端口2096
+      - singapore.com中转-端口443
+      - singapore.com中转-端口8443
+      - singapore.com中转-端口2053
+      - singapore.com中转-端口2083
+      - singapore.com中转-端口2087
+      - singapore.com中转-端口2096
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 亚太中转-8443-自动更新
-      - 亚太中转-443-自动更新
-      - 亚太中转-2096-自动更新
-      - 亚太中转-2087-自动更新
-      - 亚太中转-2083-自动更新
-      - 亚太中转-2053-自动更新
-      - 欧美中转-8443-自动更新
-      - 欧美中转-443-自动更新
-      - 欧美中转-2096-自动更新
-      - 欧美中转-2087-自动更新
-      - 欧美中转-2083-自动更新
-      - 欧美中转-2053-自动更新
-      - All-2053-自动更新
-      - All-2083-自动更新
-      - All-2087-自动更新
-      - All-2096-自动更新
-      - All-443-自动更新
-      - All-8443-自动更新
-      - 亚太中转-8443-自动更新 2
-      - 亚太中转-443-自动更新 2
-      - 亚太中转-2096-自动更新 2
-      - 亚太中转-2087-自动更新 2
-      - 亚太中转-2083-自动更新 2
-      - 亚太中转-2053-自动更新 2
-      - 欧美中转-8443-自动更新 2
-      - 欧美中转-443-自动更新 2
-      - 欧美中转-2096-自动更新 2
-      - 欧美中转-2087-自动更新 2
-      - 欧美中转-2083-自动更新 2
-      - 欧美中转-2053-自动更新 2
-      - All-2053-自动更新 2
-      - All-2083-自动更新 2
-      - All-2087-自动更新 2
-      - All-2096-自动更新 2
-      - All-443-自动更新 2
-      - All-8443-自动更新 2
-      - 亚太中转-8443-自动更新 3
-      - 亚太中转-443-自动更新 3
-      - 亚太中转-2096-自动更新 3
-      - 亚太中转-2087-自动更新 3
-      - 亚太中转-2083-自动更新 3
-      - 亚太中转-2053-自动更新 3
-      - 欧美中转-8443-自动更新 3
-      - 欧美中转-443-自动更新 3
-      - 欧美中转-2096-自动更新 3
-      - 欧美中转-2087-自动更新 3
-      - 欧美中转-2083-自动更新 3
-      - 欧美中转-2053-自动更新 3
-      - All-2053-自动更新 3
-      - All-2083-自动更新 3
-      - All-2087-自动更新 3
-      - All-2096-自动更新 3
-      - All-443-自动更新 3
-      - All-8443-自动更新 3
-      - 亚太中转-8443-自动更新 4
-      - 亚太中转-443-自动更新 4
-      - 亚太中转-2096-自动更新 4
-      - 亚太中转-2087-自动更新 4
-      - 亚太中转-2083-自动更新 4
-      - 亚太中转-2053-自动更新 4
-      - 欧美中转-8443-自动更新 4
-      - 欧美中转-443-自动更新 4
-      - 欧美中转-2096-自动更新 4
-      - 欧美中转-2087-自动更新 4
-      - 欧美中转-2083-自动更新 4
-      - 欧美中转-2053-自动更新 4
-      - All-2053-自动更新 4
-      - All-2083-自动更新 4
-      - All-2087-自动更新 4
-      - All-2096-自动更新 4
-      - All-443-自动更新 4
-      - All-8443-自动更新 4
+      - japan.com中转-端口443
+      - japan.com中转-端口8443
+      - japan.com中转-端口2053
+      - japan.com中转-端口2083
+      - japan.com中转-端口2087
+      - japan.com中转-端口2096
+      - www.hugedomains.com中转-端口443
+      - www.hugedomains.com中转-端口8443
+      - www.hugedomains.com中转-端口2053
+      - www.hugedomains.com中转-端口2083
+      - www.hugedomains.com中转-端口2087
+      - www.hugedomains.com中转-端口2096
+      - singapore.com中转-端口443
+      - singapore.com中转-端口8443
+      - singapore.com中转-端口2053
+      - singapore.com中转-端口2083
+      - singapore.com中转-端口2087
+      - singapore.com中转-端口2096
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 亚太中转-8443-自动更新
-      - 亚太中转-443-自动更新
-      - 亚太中转-2096-自动更新
-      - 亚太中转-2087-自动更新
-      - 亚太中转-2083-自动更新
-      - 亚太中转-2053-自动更新
-      - 欧美中转-8443-自动更新
-      - 欧美中转-443-自动更新
-      - 欧美中转-2096-自动更新
-      - 欧美中转-2087-自动更新
-      - 欧美中转-2083-自动更新
-      - 欧美中转-2053-自动更新
-      - All-2053-自动更新
-      - All-2083-自动更新
-      - All-2087-自动更新
-      - All-2096-自动更新
-      - All-443-自动更新
-      - All-8443-自动更新
-      - 亚太中转-8443-自动更新 2
-      - 亚太中转-443-自动更新 2
-      - 亚太中转-2096-自动更新 2
-      - 亚太中转-2087-自动更新 2
-      - 亚太中转-2083-自动更新 2
-      - 亚太中转-2053-自动更新 2
-      - 欧美中转-8443-自动更新 2
-      - 欧美中转-443-自动更新 2
-      - 欧美中转-2096-自动更新 2
-      - 欧美中转-2087-自动更新 2
-      - 欧美中转-2083-自动更新 2
-      - 欧美中转-2053-自动更新 2
-      - All-2053-自动更新 2
-      - All-2083-自动更新 2
-      - All-2087-自动更新 2
-      - All-2096-自动更新 2
-      - All-443-自动更新 2
-      - All-8443-自动更新 2
-      - 亚太中转-8443-自动更新 3
-      - 亚太中转-443-自动更新 3
-      - 亚太中转-2096-自动更新 3
-      - 亚太中转-2087-自动更新 3
-      - 亚太中转-2083-自动更新 3
-      - 亚太中转-2053-自动更新 3
-      - 欧美中转-8443-自动更新 3
-      - 欧美中转-443-自动更新 3
-      - 欧美中转-2096-自动更新 3
-      - 欧美中转-2087-自动更新 3
-      - 欧美中转-2083-自动更新 3
-      - 欧美中转-2053-自动更新 3
-      - All-2053-自动更新 3
-      - All-2083-自动更新 3
-      - All-2087-自动更新 3
-      - All-2096-自动更新 3
-      - All-443-自动更新 3
-      - All-8443-自动更新 3
-      - 亚太中转-8443-自动更新 4
-      - 亚太中转-443-自动更新 4
-      - 亚太中转-2096-自动更新 4
-      - 亚太中转-2087-自动更新 4
-      - 亚太中转-2083-自动更新 4
-      - 亚太中转-2053-自动更新 4
-      - 欧美中转-8443-自动更新 4
-      - 欧美中转-443-自动更新 4
-      - 欧美中转-2096-自动更新 4
-      - 欧美中转-2087-自动更新 4
-      - 欧美中转-2083-自动更新 4
-      - 欧美中转-2053-自动更新 4
-      - All-2053-自动更新 4
-      - All-2083-自动更新 4
-      - All-2087-自动更新 4
-      - All-2096-自动更新 4
-      - All-443-自动更新 4
-      - All-8443-自动更新 4
+      - japan.com中转-端口443
+      - japan.com中转-端口8443
+      - japan.com中转-端口2053
+      - japan.com中转-端口2083
+      - japan.com中转-端口2087
+      - japan.com中转-端口2096
+      - www.hugedomains.com中转-端口443
+      - www.hugedomains.com中转-端口8443
+      - www.hugedomains.com中转-端口2053
+      - www.hugedomains.com中转-端口2083
+      - www.hugedomains.com中转-端口2087
+      - www.hugedomains.com中转-端口2096
+      - singapore.com中转-端口443
+      - singapore.com中转-端口8443
+      - singapore.com中转-端口2053
+      - singapore.com中转-端口2083
+      - singapore.com中转-端口2087
+      - singapore.com中转-端口2096
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 亚太中转-8443-自动更新
-      - 亚太中转-443-自动更新
-      - 亚太中转-2096-自动更新
-      - 亚太中转-2087-自动更新
-      - 亚太中转-2083-自动更新
-      - 亚太中转-2053-自动更新
-      - 欧美中转-8443-自动更新
-      - 欧美中转-443-自动更新
-      - 欧美中转-2096-自动更新
-      - 欧美中转-2087-自动更新
-      - 欧美中转-2083-自动更新
-      - 欧美中转-2053-自动更新
-      - All-2053-自动更新
-      - All-2083-自动更新
-      - All-2087-自动更新
-      - All-2096-自动更新
-      - All-443-自动更新
-      - All-8443-自动更新
-      - 亚太中转-8443-自动更新 2
-      - 亚太中转-443-自动更新 2
-      - 亚太中转-2096-自动更新 2
-      - 亚太中转-2087-自动更新 2
-      - 亚太中转-2083-自动更新 2
-      - 亚太中转-2053-自动更新 2
-      - 欧美中转-8443-自动更新 2
-      - 欧美中转-443-自动更新 2
-      - 欧美中转-2096-自动更新 2
-      - 欧美中转-2087-自动更新 2
-      - 欧美中转-2083-自动更新 2
-      - 欧美中转-2053-自动更新 2
-      - All-2053-自动更新 2
-      - All-2083-自动更新 2
-      - All-2087-自动更新 2
-      - All-2096-自动更新 2
-      - All-443-自动更新 2
-      - All-8443-自动更新 2
-      - 亚太中转-8443-自动更新 3
-      - 亚太中转-443-自动更新 3
-      - 亚太中转-2096-自动更新 3
-      - 亚太中转-2087-自动更新 3
-      - 亚太中转-2083-自动更新 3
-      - 亚太中转-2053-自动更新 3
-      - 欧美中转-8443-自动更新 3
-      - 欧美中转-443-自动更新 3
-      - 欧美中转-2096-自动更新 3
-      - 欧美中转-2087-自动更新 3
-      - 欧美中转-2083-自动更新 3
-      - 欧美中转-2053-自动更新 3
-      - All-2053-自动更新 3
-      - All-2083-自动更新 3
-      - All-2087-自动更新 3
-      - All-2096-自动更新 3
-      - All-443-自动更新 3
-      - All-8443-自动更新 3
-      - 亚太中转-8443-自动更新 4
-      - 亚太中转-443-自动更新 4
-      - 亚太中转-2096-自动更新 4
-      - 亚太中转-2087-自动更新 4
-      - 亚太中转-2083-自动更新 4
-      - 亚太中转-2053-自动更新 4
-      - 欧美中转-8443-自动更新 4
-      - 欧美中转-443-自动更新 4
-      - 欧美中转-2096-自动更新 4
-      - 欧美中转-2087-自动更新 4
-      - 欧美中转-2083-自动更新 4
-      - 欧美中转-2053-自动更新 4
-      - All-2053-自动更新 4
-      - All-2083-自动更新 4
-      - All-2087-自动更新 4
-      - All-2096-自动更新 4
-      - All-443-自动更新 4
-      - All-8443-自动更新 4
+      - japan.com中转-端口443
+      - japan.com中转-端口8443
+      - japan.com中转-端口2053
+      - japan.com中转-端口2083
+      - japan.com中转-端口2087
+      - japan.com中转-端口2096
+      - www.hugedomains.com中转-端口443
+      - www.hugedomains.com中转-端口8443
+      - www.hugedomains.com中转-端口2053
+      - www.hugedomains.com中转-端口2083
+      - www.hugedomains.com中转-端口2087
+      - www.hugedomains.com中转-端口2096
+      - singapore.com中转-端口443
+      - singapore.com中转-端口8443
+      - singapore.com中转-端口2053
+      - singapore.com中转-端口2083
+      - singapore.com中转-端口2087
+      - singapore.com中转-端口2096
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太中转-8443-自动更新
-      - 亚太中转-443-自动更新
-      - 亚太中转-2096-自动更新
-      - 亚太中转-2087-自动更新
-      - 亚太中转-2083-自动更新
-      - 亚太中转-2053-自动更新
-      - 欧美中转-8443-自动更新
-      - 欧美中转-443-自动更新
-      - 欧美中转-2096-自动更新
-      - 欧美中转-2087-自动更新
-      - 欧美中转-2083-自动更新
-      - 欧美中转-2053-自动更新
-      - All-2053-自动更新
-      - All-2083-自动更新
-      - All-2087-自动更新
-      - All-2096-自动更新
-      - All-443-自动更新
-      - All-8443-自动更新
-      - 亚太中转-8443-自动更新 2
-      - 亚太中转-443-自动更新 2
-      - 亚太中转-2096-自动更新 2
-      - 亚太中转-2087-自动更新 2
-      - 亚太中转-2083-自动更新 2
-      - 亚太中转-2053-自动更新 2
-      - 欧美中转-8443-自动更新 2
-      - 欧美中转-443-自动更新 2
-      - 欧美中转-2096-自动更新 2
-      - 欧美中转-2087-自动更新 2
-      - 欧美中转-2083-自动更新 2
-      - 欧美中转-2053-自动更新 2
-      - All-2053-自动更新 2
-      - All-2083-自动更新 2
-      - All-2087-自动更新 2
-      - All-2096-自动更新 2
-      - All-443-自动更新 2
-      - All-8443-自动更新 2
-      - 亚太中转-8443-自动更新 3
-      - 亚太中转-443-自动更新 3
-      - 亚太中转-2096-自动更新 3
-      - 亚太中转-2087-自动更新 3
-      - 亚太中转-2083-自动更新 3
-      - 亚太中转-2053-自动更新 3
-      - 欧美中转-8443-自动更新 3
-      - 欧美中转-443-自动更新 3
-      - 欧美中转-2096-自动更新 3
-      - 欧美中转-2087-自动更新 3
-      - 欧美中转-2083-自动更新 3
-      - 欧美中转-2053-自动更新 3
-      - All-2053-自动更新 3
-      - All-2083-自动更新 3
-      - All-2087-自动更新 3
-      - All-2096-自动更新 3
-      - All-443-自动更新 3
-      - All-8443-自动更新 3
-      - 亚太中转-8443-自动更新 4
-      - 亚太中转-443-自动更新 4
-      - 亚太中转-2096-自动更新 4
-      - 亚太中转-2087-自动更新 4
-      - 亚太中转-2083-自动更新 4
-      - 亚太中转-2053-自动更新 4
-      - 欧美中转-8443-自动更新 4
-      - 欧美中转-443-自动更新 4
-      - 欧美中转-2096-自动更新 4
-      - 欧美中转-2087-自动更新 4
-      - 欧美中转-2083-自动更新 4
-      - 欧美中转-2053-自动更新 4
-      - All-2053-自动更新 4
-      - All-2083-自动更新 4
-      - All-2087-自动更新 4
-      - All-2096-自动更新 4
-      - All-443-自动更新 4
-      - All-8443-自动更新 4
+      - japan.com中转-端口443
+      - japan.com中转-端口8443
+      - japan.com中转-端口2053
+      - japan.com中转-端口2083
+      - japan.com中转-端口2087
+      - japan.com中转-端口2096
+      - www.hugedomains.com中转-端口443
+      - www.hugedomains.com中转-端口8443
+      - www.hugedomains.com中转-端口2053
+      - www.hugedomains.com中转-端口2083
+      - www.hugedomains.com中转-端口2087
+      - www.hugedomains.com中转-端口2096
+      - singapore.com中转-端口443
+      - singapore.com中转-端口8443
+      - singapore.com中转-端口2053
+      - singapore.com中转-端口2083
+      - singapore.com中转-端口2087
+      - singapore.com中转-端口2096
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -652,78 +220,24 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太中转-8443-自动更新
-      - 亚太中转-443-自动更新
-      - 亚太中转-2096-自动更新
-      - 亚太中转-2087-自动更新
-      - 亚太中转-2083-自动更新
-      - 亚太中转-2053-自动更新
-      - 欧美中转-8443-自动更新
-      - 欧美中转-443-自动更新
-      - 欧美中转-2096-自动更新
-      - 欧美中转-2087-自动更新
-      - 欧美中转-2083-自动更新
-      - 欧美中转-2053-自动更新
-      - All-2053-自动更新
-      - All-2083-自动更新
-      - All-2087-自动更新
-      - All-2096-自动更新
-      - All-443-自动更新
-      - All-8443-自动更新
-      - 亚太中转-8443-自动更新 2
-      - 亚太中转-443-自动更新 2
-      - 亚太中转-2096-自动更新 2
-      - 亚太中转-2087-自动更新 2
-      - 亚太中转-2083-自动更新 2
-      - 亚太中转-2053-自动更新 2
-      - 欧美中转-8443-自动更新 2
-      - 欧美中转-443-自动更新 2
-      - 欧美中转-2096-自动更新 2
-      - 欧美中转-2087-自动更新 2
-      - 欧美中转-2083-自动更新 2
-      - 欧美中转-2053-自动更新 2
-      - All-2053-自动更新 2
-      - All-2083-自动更新 2
-      - All-2087-自动更新 2
-      - All-2096-自动更新 2
-      - All-443-自动更新 2
-      - All-8443-自动更新 2
-      - 亚太中转-8443-自动更新 3
-      - 亚太中转-443-自动更新 3
-      - 亚太中转-2096-自动更新 3
-      - 亚太中转-2087-自动更新 3
-      - 亚太中转-2083-自动更新 3
-      - 亚太中转-2053-自动更新 3
-      - 欧美中转-8443-自动更新 3
-      - 欧美中转-443-自动更新 3
-      - 欧美中转-2096-自动更新 3
-      - 欧美中转-2087-自动更新 3
-      - 欧美中转-2083-自动更新 3
-      - 欧美中转-2053-自动更新 3
-      - All-2053-自动更新 3
-      - All-2083-自动更新 3
-      - All-2087-自动更新 3
-      - All-2096-自动更新 3
-      - All-443-自动更新 3
-      - All-8443-自动更新 3
-      - 亚太中转-8443-自动更新 4
-      - 亚太中转-443-自动更新 4
-      - 亚太中转-2096-自动更新 4
-      - 亚太中转-2087-自动更新 4
-      - 亚太中转-2083-自动更新 4
-      - 亚太中转-2053-自动更新 4
-      - 欧美中转-8443-自动更新 4
-      - 欧美中转-443-自动更新 4
-      - 欧美中转-2096-自动更新 4
-      - 欧美中转-2087-自动更新 4
-      - 欧美中转-2083-自动更新 4
-      - 欧美中转-2053-自动更新 4
-      - All-2053-自动更新 4
-      - All-2083-自动更新 4
-      - All-2087-自动更新 4
-      - All-2096-自动更新 4
-      - All-443-自动更新 4
-      - All-8443-自动更新 4
+      - japan.com中转-端口443
+      - japan.com中转-端口8443
+      - japan.com中转-端口2053
+      - japan.com中转-端口2083
+      - japan.com中转-端口2087
+      - japan.com中转-端口2096
+      - www.hugedomains.com中转-端口443
+      - www.hugedomains.com中转-端口8443
+      - www.hugedomains.com中转-端口2053
+      - www.hugedomains.com中转-端口2083
+      - www.hugedomains.com中转-端口2087
+      - www.hugedomains.com中转-端口2096
+      - singapore.com中转-端口443
+      - singapore.com中转-端口8443
+      - singapore.com中转-端口2053
+      - singapore.com中转-端口2083
+      - singapore.com中转-端口2087
+      - singapore.com中转-端口2096
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
