@@ -1,6 +1,4 @@
-# 请指定自己实际的接口名称(ip a 获取)
-interface-name: enp11s0
-
+# 需要开启 TUN 配置
 tun:
   enable: true
   stack: system
@@ -8,18 +6,9 @@ tun:
     - any:53
   #   - 8.8.8.8:53
   #   - tcp://8.8.8.8:53
-  # auto-route 与 ebpf 冲突, 不能同时使用
-  #auto-route: true
-  #auto-redir: true
-  #auto-detect-interface: true
-
-# ebpf 需要指定物理网卡
-ebpf:
-  redirect-to-tun:
-    - enp11s0
-
-# ebpf 需要配置 mark
-routing-mark: 666
+  auto-route: true
+  auto-redir: true
+  auto-detect-interface: true
 
 # 开启 DNS 配置, 且使用 fake-ip 模式
 dns:
