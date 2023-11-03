@@ -1,38 +1,19 @@
-# 请指定自己实际的接口名称(ip a 获取)
-interface-name: ens192
-
-tun:
-  enable: true
-  stack: system
-  dns-hijack:
-    - any:53
-  #   - 8.8.8.8:53
-  #   - tcp://8.8.8.8:53
-  # auto-route 与 ebpf 冲突, 不能同时使用
-  #auto-route: true
-  #auto-redir: true
-  #auto-detect-interface: true
-
-# ebpf 需要指定物理网卡
-ebpf:
-  redirect-to-tun:
-    - ens192
-
-# ebpf 需要配置 mark
-routing-mark: 666
-
-# 开启 DNS 配置, 且使用 fake-ip 模式
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
 dns:
-  enable: true
-  listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
+  enabled: true
   nameserver:
-    - 223.5.5.5
     - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 proxies:
   - {name: 🇯🇵 japan.com中转-端口443, server: japan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
   - {name: 🇯🇵 japan.com中转-端口8443, server: japan.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
