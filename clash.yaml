@@ -3,7 +3,7 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller:192.168.2.12:9090
+external-controller:http://192.168.2.12:9090
 dns:
   enabled: true
   nameserver:
