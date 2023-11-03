@@ -3,20 +3,43 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 192.168.2.251:9090
+# 请指定自己实际的接口名称(ip a 获取)
+interface-name: enp11s0
+
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+    - any:53
+  #   - 8.8.8.8:53
+  #   - tcp://8.8.8.8:53
+  # auto-route 与 ebpf 冲突, 不能同时使用
+  #auto-route: true
+  #auto-redir: true
+  #auto-detect-interface: true
+
+# ebpf 需要指定物理网卡
+ebpf:
+  redirect-to-tun:
+    - enp11s0
+
+# ebpf 需要配置 mark
+routing-mark: 666
+
+# 开启 DNS 配置, 且使用 fake-ip 模式
 dns:
-  enabled: true
-  nameserver:
-    - 119.29.29.29
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 119.29.29.29
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
 proxies:
-  - {name: 访问地址 - www.zionladderq.com, server: 192.8.8.8, port: 1, client-fingerprint: chrome, type: vmess, uuid: 0685104b-2181-47cf-b92a-ca49a3656fb1, alterId: 1, cipher: aes-128-gcm, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 有效期 - 2024-02-14, server: 192.8.8.9, port: 2, client-fingerprint: chrome, type: vmess, uuid: 0685104b-2181-47cf-b92a-ca49a3656fb1, alterId: 1, cipher: aes-128-gcm, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 【推荐】IEPL专线-香港BGP01, server: 120.233.27.129, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 【推荐】IEPL深港专线-HKT01, server: 120.233.27.170, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇺🇸 【推荐】IEPL专线美国-奈飞01, server: 120.233.27.170, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
@@ -53,8 +76,6 @@ proxy-groups:
     proxies:
       - Auto - UrlTest
       - DIRECT
-      - 访问地址 - www.zionladderq.com
-      - 有效期 - 2024-02-14
       - 🇭🇰 【推荐】IEPL专线-香港BGP01
       - 🇭🇰 【推荐】IEPL深港专线-HKT01
       - 🇺🇸 【推荐】IEPL专线美国-奈飞01
@@ -95,8 +116,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - Proxies
-      - 访问地址 - www.zionladderq.com
-      - 有效期 - 2024-02-14
       - 🇭🇰 【推荐】IEPL专线-香港BGP01
       - 🇭🇰 【推荐】IEPL深港专线-HKT01
       - 🇺🇸 【推荐】IEPL专线美国-奈飞01
@@ -163,8 +182,6 @@ proxy-groups:
     proxies:
       - Proxies
       - DIRECT
-      - 访问地址 - www.zionladderq.com
-      - 有效期 - 2024-02-14
       - 🇭🇰 【推荐】IEPL专线-香港BGP01
       - 🇭🇰 【推荐】IEPL深港专线-HKT01
       - 🇺🇸 【推荐】IEPL专线美国-奈飞01
@@ -200,8 +217,6 @@ proxy-groups:
     proxies:
       - Proxies
       - DIRECT
-      - 访问地址 - www.zionladderq.com
-      - 有效期 - 2024-02-14
       - 🇭🇰 【推荐】IEPL专线-香港BGP01
       - 🇭🇰 【推荐】IEPL深港专线-HKT01
       - 🇺🇸 【推荐】IEPL专线美国-奈飞01
@@ -237,8 +252,6 @@ proxy-groups:
     proxies:
       - Proxies
       - DIRECT
-      - 访问地址 - www.zionladderq.com
-      - 有效期 - 2024-02-14
       - 🇭🇰 【推荐】IEPL专线-香港BGP01
       - 🇭🇰 【推荐】IEPL深港专线-HKT01
       - 🇺🇸 【推荐】IEPL专线美国-奈飞01
@@ -274,8 +287,6 @@ proxy-groups:
     proxies:
       - Proxies
       - DIRECT
-      - 访问地址 - www.zionladderq.com
-      - 有效期 - 2024-02-14
       - 🇭🇰 【推荐】IEPL专线-香港BGP01
       - 🇭🇰 【推荐】IEPL深港专线-HKT01
       - 🇺🇸 【推荐】IEPL专线美国-奈飞01
@@ -317,8 +328,6 @@ proxy-groups:
       - Proxies
       - DIRECT
       - Domestic
-      - 访问地址 - www.zionladderq.com
-      - 有效期 - 2024-02-14
       - 🇭🇰 【推荐】IEPL专线-香港BGP01
       - 🇭🇰 【推荐】IEPL深港专线-HKT01
       - 🇺🇸 【推荐】IEPL专线美国-奈飞01
@@ -369,8 +378,6 @@ proxy-groups:
     url: http://cp.cloudflare.com/generate_204
     interval: 1800
     proxies:
-      - 访问地址 - www.zionladderq.com
-      - 有效期 - 2024-02-14
       - 🇭🇰 【推荐】IEPL专线-香港BGP01
       - 🇭🇰 【推荐】IEPL深港专线-HKT01
       - 🇺🇸 【推荐】IEPL专线美国-奈飞01
