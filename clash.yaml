@@ -1,9 +1,3 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: 192.168.2.251:9090
 # 请指定自己实际的接口名称(ip a 获取)
 interface-name: enp11s0
 
