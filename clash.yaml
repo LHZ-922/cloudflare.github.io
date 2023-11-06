@@ -1,3 +1,7 @@
+# Clash 的 RESTful API
+external-controller: 192.168.2.251:9090
+# RESTful API 的口令
+secret: 1412315
 # 需要开启 TUN 配置
 tun:
   enable: true
@@ -17,78 +21,78 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-    - 223.5.5.5
     - 119.29.29.29
+    - 223.5.5.5
   nameserver:
-    - 223.5.5.5
     - 119.29.29.29
+    - 223.5.5.5
 proxies:
-  - {name: 🇭🇰 【推荐】IEPL专线-香港BGP01, server: 120.233.27.129, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【推荐】IEPL深港专线-HKT01, server: 120.233.27.170, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇺🇸 【推荐】IEPL专线美国-奈飞01, server: 120.233.27.170, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【推荐】IEPL专线-香港BGP02, server: 120.233.27.131, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇸🇬 ChatGPT-IEPL专线-新加坡02, server: 120.233.27.131, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇨🇳 【推荐】中转*广州移动-台北*01, server: 112.33.52.64, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【推荐】上海CN2GIA-香港HGC*02, server: 58.32.11.68, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【推荐】上海联通-香港宽频01, server: 223.167.24.188, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇺🇸 【推荐】上海联通-美国奈飞*01, server: 223.167.24.188, port: 10004, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 【推荐】中转-联通-台北01, server: 103.45.78.187, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇯🇵 【推荐】江苏联通-日本专线21, server: 103.45.78.147, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【推荐】移动国际中转-香港宽频01, server: 112.33.32.136, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇯🇵 【推荐】移动国际中转-东京01, server: 112.33.32.136, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 【推荐】移动国际中转-台北01, server: 112.33.32.136, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇺🇸 【推荐】移动国际中转-洛杉矶01, server: 112.33.32.148, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇰🇷 专线-江苏联通-首尔01, server: 103.45.78.209, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇸🇬 专线-江苏联通-新加坡01, server: 103.45.78.207, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇫🇷 专线-江苏联通-巴黎01, server: 103.45.78.185, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇹🇷 专线-江苏联通-土耳其01, server: 103.45.78.197, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: "🇹🇼 [直连]台北-Hinet01", server: hinet-d01.whiteconnectb.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: hinet-d01.whiteconnectb.com}}}
-  - {name: 直连-ChatGPT-US01, server: la-dmu01.xc188.net, port: 64443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: la-dmu01.xc188.net}}}
-  - {name: 🇺🇸 联通直连-美国西雅图07, server: sea07.cn2api.com, port: 64443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea07.cn2api.com}}}
-  - {name: 🇦🇺 直连-悉尼02, server: au-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: au-ls03.cn2api.com}}}
-  - {name: 🇨🇦 直连-蒙特利尔02, server: ca-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: ca-ls03.cn2api.com}}}
-  - {name: 🇩🇪 直连-法兰克福02, server: de-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: de-ls03.cn2api.com}}}
-  - {name: 🇫🇷 直连-巴黎02, server: fr-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: fr-ls03.cn2api.com}}}
-  - {name: 🇬🇧 直连-伦敦02, server: gb-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: gb-ls03.cn2api.com}}}
-  - {name: 🇮🇪 直连-爱尔兰02, server: ie-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: ie-ls03.cn2api.com}}}
-  - {name: 🇮🇳 直连-孟买02, server: in-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: in-ls03.cn2api.com}}}
-  - {name: 直连-斯德哥尔摩02, server: se-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: se-ls03.cn2api.com}}}
+  - {name:【推荐】IEPL专线-香港BGP01, server: 120.233.27.129, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】IEPL深港专线-HKT01, server: 120.233.27.170, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】IEPL专线美国-奈飞01, server: 120.233.27.170, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】IEPL专线-香港BGP02, server: 120.233.27.131, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:ChatGPT-IEPL专线-新加坡02, server: 120.233.27.131, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】中转*广州移动-台北*01, server: 112.33.52.64, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】上海CN2GIA-香港HGC*02, server: 58.32.11.68, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】上海联通-香港宽频01, server: 223.167.24.188, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】上海联通-美国奈飞*01, server: 223.167.24.188, port: 10004, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】中转-联通-台北01, server: 103.45.78.187, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】江苏联通-日本专线21, server: 103.45.78.147, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】移动国际中转-香港宽频01, server: 112.33.32.136, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】移动国际中转-东京01, server: 112.33.32.136, port: 10002, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】移动国际中转-台北01, server: 112.33.32.136, port: 10003, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:【推荐】移动国际中转-洛杉矶01, server: 112.33.32.148, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:专线-江苏联通-首尔01, server: 103.45.78.209, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:专线-江苏联通-新加坡01, server: 103.45.78.207, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:专线-江苏联通-巴黎01, server: 103.45.78.185, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:专线-江苏联通-土耳其01, server: 103.45.78.197, port: 10001, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: false, tfo: false, skip-cert-verify: false}
+  - {name:直连-台北-Hinet01, server: hinet-d01.whiteconnectb.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: hinet-d01.whiteconnectb.com}}}
+  - {name:直连-ChatGPT-US01, server: la-dmu01.xc188.net, port: 64443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: la-dmu01.xc188.net}}}
+  - {name:联通直连-美国西雅图07, server: sea07.cn2api.com, port: 64443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea07.cn2api.com}}}
+  - {name:直连-悉尼02, server: au-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: au-ls03.cn2api.com}}}
+  - {name:直连-蒙特利尔02, server: ca-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: ca-ls03.cn2api.com}}}
+  - {name:直连-法兰克福02, server: de-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: de-ls03.cn2api.com}}}
+  - {name:直连-巴黎02, server: fr-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: fr-ls03.cn2api.com}}}
+  - {name:直连-伦敦02, server: gb-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: gb-ls03.cn2api.com}}}
+  - {name:直连-爱尔兰02, server: ie-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: ie-ls03.cn2api.com}}}
+  - {name:直连-孟买02, server: in-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: in-ls03.cn2api.com}}}
+  - {name:直连-斯德哥尔摩02, server: se-ls03.cn2api.com, port: 65443, client-fingerprint: chrome, type: vmess, uuid: 0edcb88e-1af1-412c-8b13-e7e2ed2c5e01, alterId: 1, cipher: none, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: se-ls03.cn2api.com}}}
 proxy-groups:
   - name: Proxies
     type: select
     proxies:
       - Auto - UrlTest
       - DIRECT
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇺🇸 【推荐】IEPL专线美国-奈飞01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇸🇬 ChatGPT-IEPL专线-新加坡02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 🇺🇸 【推荐】上海联通-美国奈飞*01
-      - 【推荐】中转-联通-台北01
-      - 🇯🇵 【推荐】江苏联通-日本专线21
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 🇯🇵 【推荐】移动国际中转-东京01
-      - 【推荐】移动国际中转-台北01
-      - 🇺🇸 【推荐】移动国际中转-洛杉矶01
-      - 🇰🇷 专线-江苏联通-首尔01
-      - 🇸🇬 专线-江苏联通-新加坡01
-      - 🇫🇷 专线-江苏联通-巴黎01
-      - 🇹🇷 专线-江苏联通-土耳其01
-      - 🇹🇼 [直连]台北-Hinet01
-      - 直连-ChatGPT-US01
-      - 🇺🇸 联通直连-美国西雅图07
-      - 🇦🇺 直连-悉尼02
-      - 🇨🇦 直连-蒙特利尔02
-      - 🇩🇪 直连-法兰克福02
-      - 🇫🇷 直连-巴黎02
-      - 🇬🇧 直连-伦敦02
-      - 🇮🇪 直连-爱尔兰02
-      - 🇮🇳 直连-孟买02
-      - 直连-斯德哥尔摩02
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线美国-奈飞01
+      -【推荐】IEPL专线-香港BGP02
+      -ChatGPT-IEPL专线-新加坡02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】上海联通-美国奈飞*01
+      -【推荐】中转-联通-台北01
+      -【推荐】江苏联通-日本专线21
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-东京01
+      -【推荐】移动国际中转-台北01
+      -【推荐】移动国际中转-洛杉矶01
+      -专线-江苏联通-首尔01
+      -专线-江苏联通-新加坡01
+      -专线-江苏联通-巴黎01
+      -专线-江苏联通-土耳其01
+      - 直连-台北-Hinet01
+      -直连-ChatGPT-US01
+      -联通直连-美国西雅图07
+      -直连-悉尼02
+      -直连-蒙特利尔02
+      -直连-法兰克福02
+      -直连-巴黎02
+      -直连-伦敦02
+      -直连-爱尔兰02
+      -直连-孟买02
+      -直连-斯德哥尔摩02
   - name: Domestic
     type: select
     proxies:
@@ -99,36 +103,36 @@ proxy-groups:
     proxies:
       - DIRECT
       - Proxies
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇺🇸 【推荐】IEPL专线美国-奈飞01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇸🇬 ChatGPT-IEPL专线-新加坡02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 🇺🇸 【推荐】上海联通-美国奈飞*01
-      - 【推荐】中转-联通-台北01
-      - 🇯🇵 【推荐】江苏联通-日本专线21
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 🇯🇵 【推荐】移动国际中转-东京01
-      - 【推荐】移动国际中转-台北01
-      - 🇺🇸 【推荐】移动国际中转-洛杉矶01
-      - 🇰🇷 专线-江苏联通-首尔01
-      - 🇸🇬 专线-江苏联通-新加坡01
-      - 🇫🇷 专线-江苏联通-巴黎01
-      - 🇹🇷 专线-江苏联通-土耳其01
-      - 🇹🇼 [直连]台北-Hinet01
-      - 直连-ChatGPT-US01
-      - 🇺🇸 联通直连-美国西雅图07
-      - 🇦🇺 直连-悉尼02
-      - 🇨🇦 直连-蒙特利尔02
-      - 🇩🇪 直连-法兰克福02
-      - 🇫🇷 直连-巴黎02
-      - 🇬🇧 直连-伦敦02
-      - 🇮🇪 直连-爱尔兰02
-      - 🇮🇳 直连-孟买02
-      - 直连-斯德哥尔摩02
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线美国-奈飞01
+      -【推荐】IEPL专线-香港BGP02
+      -ChatGPT-IEPL专线-新加坡02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】上海联通-美国奈飞*01
+      -【推荐】中转-联通-台北01
+      -【推荐】江苏联通-日本专线21
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-东京01
+      -【推荐】移动国际中转-台北01
+      -【推荐】移动国际中转-洛杉矶01
+      -专线-江苏联通-首尔01
+      -专线-江苏联通-新加坡01
+      -专线-江苏联通-巴黎01
+      -专线-江苏联通-土耳其01
+      - 直连-台北-Hinet01
+      -直连-ChatGPT-US01
+      -联通直连-美国西雅图07
+      -直连-悉尼02
+      -直连-蒙特利尔02
+      -直连-法兰克福02
+      -直连-巴黎02
+      -直连-伦敦02
+      -直连-爱尔兰02
+      -直连-孟买02
+      -直连-斯德哥尔摩02
   - name: Others
     type: select
     proxies:
@@ -150,156 +154,156 @@ proxy-groups:
     proxies:
       - DIRECT
       - Proxies
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 【推荐】中转-联通-台北01
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 【推荐】移动国际中转-台北01
-      - 🇹🇼 [直连]台北-Hinet01
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线-香港BGP02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】中转-联通-台北01
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-台北01
+      - 直连-台北-Hinet01
   - name: GlobalTV
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇺🇸 【推荐】IEPL专线美国-奈飞01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇸🇬 ChatGPT-IEPL专线-新加坡02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 🇺🇸 【推荐】上海联通-美国奈飞*01
-      - 【推荐】中转-联通-台北01
-      - 🇯🇵 【推荐】江苏联通-日本专线21
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 🇯🇵 【推荐】移动国际中转-东京01
-      - 【推荐】移动国际中转-台北01
-      - 🇺🇸 【推荐】移动国际中转-洛杉矶01
-      - 🇰🇷 专线-江苏联通-首尔01
-      - 🇸🇬 专线-江苏联通-新加坡01
-      - 🇫🇷 专线-江苏联通-巴黎01
-      - 🇹🇷 专线-江苏联通-土耳其01
-      - 🇹🇼 [直连]台北-Hinet01
-      - 直连-ChatGPT-US01
-      - 🇺🇸 联通直连-美国西雅图07
-      - 🇦🇺 直连-悉尼02
-      - 🇨🇦 直连-蒙特利尔02
-      - 🇩🇪 直连-法兰克福02
-      - 🇫🇷 直连-巴黎02
-      - 🇬🇧 直连-伦敦02
-      - 🇮🇪 直连-爱尔兰02
-      - 🇮🇳 直连-孟买02
-      - 直连-斯德哥尔摩02
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线美国-奈飞01
+      -【推荐】IEPL专线-香港BGP02
+      -ChatGPT-IEPL专线-新加坡02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】上海联通-美国奈飞*01
+      -【推荐】中转-联通-台北01
+      -【推荐】江苏联通-日本专线21
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-东京01
+      -【推荐】移动国际中转-台北01
+      -【推荐】移动国际中转-洛杉矶01
+      -专线-江苏联通-首尔01
+      -专线-江苏联通-新加坡01
+      -专线-江苏联通-巴黎01
+      -专线-江苏联通-土耳其01
+      - 直连-台北-Hinet01
+      -直连-ChatGPT-US01
+      -联通直连-美国西雅图07
+      -直连-悉尼02
+      -直连-蒙特利尔02
+      -直连-法兰克福02
+      -直连-巴黎02
+      -直连-伦敦02
+      -直连-爱尔兰02
+      -直连-孟买02
+      -直连-斯德哥尔摩02
   - name: Netflix
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇺🇸 【推荐】IEPL专线美国-奈飞01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇸🇬 ChatGPT-IEPL专线-新加坡02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 🇺🇸 【推荐】上海联通-美国奈飞*01
-      - 【推荐】中转-联通-台北01
-      - 🇯🇵 【推荐】江苏联通-日本专线21
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 🇯🇵 【推荐】移动国际中转-东京01
-      - 【推荐】移动国际中转-台北01
-      - 🇺🇸 【推荐】移动国际中转-洛杉矶01
-      - 🇰🇷 专线-江苏联通-首尔01
-      - 🇸🇬 专线-江苏联通-新加坡01
-      - 🇫🇷 专线-江苏联通-巴黎01
-      - 🇹🇷 专线-江苏联通-土耳其01
-      - 🇹🇼 [直连]台北-Hinet01
-      - 直连-ChatGPT-US01
-      - 🇺🇸 联通直连-美国西雅图07
-      - 🇦🇺 直连-悉尼02
-      - 🇨🇦 直连-蒙特利尔02
-      - 🇩🇪 直连-法兰克福02
-      - 🇫🇷 直连-巴黎02
-      - 🇬🇧 直连-伦敦02
-      - 🇮🇪 直连-爱尔兰02
-      - 🇮🇳 直连-孟买02
-      - 直连-斯德哥尔摩02
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线美国-奈飞01
+      -【推荐】IEPL专线-香港BGP02
+      -ChatGPT-IEPL专线-新加坡02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】上海联通-美国奈飞*01
+      -【推荐】中转-联通-台北01
+      -【推荐】江苏联通-日本专线21
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-东京01
+      -【推荐】移动国际中转-台北01
+      -【推荐】移动国际中转-洛杉矶01
+      -专线-江苏联通-首尔01
+      -专线-江苏联通-新加坡01
+      -专线-江苏联通-巴黎01
+      -专线-江苏联通-土耳其01
+      - 直连-台北-Hinet01
+      -直连-ChatGPT-US01
+      -联通直连-美国西雅图07
+      -直连-悉尼02
+      -直连-蒙特利尔02
+      -直连-法兰克福02
+      -直连-巴黎02
+      -直连-伦敦02
+      -直连-爱尔兰02
+      -直连-孟买02
+      -直连-斯德哥尔摩02
   - name: Spotify
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇺🇸 【推荐】IEPL专线美国-奈飞01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇸🇬 ChatGPT-IEPL专线-新加坡02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 🇺🇸 【推荐】上海联通-美国奈飞*01
-      - 【推荐】中转-联通-台北01
-      - 🇯🇵 【推荐】江苏联通-日本专线21
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 🇯🇵 【推荐】移动国际中转-东京01
-      - 【推荐】移动国际中转-台北01
-      - 🇺🇸 【推荐】移动国际中转-洛杉矶01
-      - 🇰🇷 专线-江苏联通-首尔01
-      - 🇸🇬 专线-江苏联通-新加坡01
-      - 🇫🇷 专线-江苏联通-巴黎01
-      - 🇹🇷 专线-江苏联通-土耳其01
-      - 🇹🇼 [直连]台北-Hinet01
-      - 直连-ChatGPT-US01
-      - 🇺🇸 联通直连-美国西雅图07
-      - 🇦🇺 直连-悉尼02
-      - 🇨🇦 直连-蒙特利尔02
-      - 🇩🇪 直连-法兰克福02
-      - 🇫🇷 直连-巴黎02
-      - 🇬🇧 直连-伦敦02
-      - 🇮🇪 直连-爱尔兰02
-      - 🇮🇳 直连-孟买02
-      - 直连-斯德哥尔摩02
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线美国-奈飞01
+      -【推荐】IEPL专线-香港BGP02
+      -ChatGPT-IEPL专线-新加坡02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】上海联通-美国奈飞*01
+      -【推荐】中转-联通-台北01
+      -【推荐】江苏联通-日本专线21
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-东京01
+      -【推荐】移动国际中转-台北01
+      -【推荐】移动国际中转-洛杉矶01
+      -专线-江苏联通-首尔01
+      -专线-江苏联通-新加坡01
+      -专线-江苏联通-巴黎01
+      -专线-江苏联通-土耳其01
+      - 直连-台北-Hinet01
+      -直连-ChatGPT-US01
+      -联通直连-美国西雅图07
+      -直连-悉尼02
+      -直连-蒙特利尔02
+      -直连-法兰克福02
+      -直连-巴黎02
+      -直连-伦敦02
+      -直连-爱尔兰02
+      -直连-孟买02
+      -直连-斯德哥尔摩02
   - name: Telegram
     type: select
     proxies:
       - Proxies
       - DIRECT
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇺🇸 【推荐】IEPL专线美国-奈飞01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇸🇬 ChatGPT-IEPL专线-新加坡02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 🇺🇸 【推荐】上海联通-美国奈飞*01
-      - 【推荐】中转-联通-台北01
-      - 🇯🇵 【推荐】江苏联通-日本专线21
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 🇯🇵 【推荐】移动国际中转-东京01
-      - 【推荐】移动国际中转-台北01
-      - 🇺🇸 【推荐】移动国际中转-洛杉矶01
-      - 🇰🇷 专线-江苏联通-首尔01
-      - 🇸🇬 专线-江苏联通-新加坡01
-      - 🇫🇷 专线-江苏联通-巴黎01
-      - 🇹🇷 专线-江苏联通-土耳其01
-      - 🇹🇼 [直连]台北-Hinet01
-      - 直连-ChatGPT-US01
-      - 🇺🇸 联通直连-美国西雅图07
-      - 🇦🇺 直连-悉尼02
-      - 🇨🇦 直连-蒙特利尔02
-      - 🇩🇪 直连-法兰克福02
-      - 🇫🇷 直连-巴黎02
-      - 🇬🇧 直连-伦敦02
-      - 🇮🇪 直连-爱尔兰02
-      - 🇮🇳 直连-孟买02
-      - 直连-斯德哥尔摩02
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线美国-奈飞01
+      -【推荐】IEPL专线-香港BGP02
+      -ChatGPT-IEPL专线-新加坡02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】上海联通-美国奈飞*01
+      -【推荐】中转-联通-台北01
+      -【推荐】江苏联通-日本专线21
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-东京01
+      -【推荐】移动国际中转-台北01
+      -【推荐】移动国际中转-洛杉矶01
+      -专线-江苏联通-首尔01
+      -专线-江苏联通-新加坡01
+      -专线-江苏联通-巴黎01
+      -专线-江苏联通-土耳其01
+      - 直连-台北-Hinet01
+      -直连-ChatGPT-US01
+      -联通直连-美国西雅图07
+      -直连-悉尼02
+      -直连-蒙特利尔02
+      -直连-法兰克福02
+      -直连-巴黎02
+      -直连-伦敦02
+      -直连-爱尔兰02
+      -直连-孟买02
+      -直连-斯德哥尔摩02
   - name: Steam
     type: select
     proxies:
@@ -311,36 +315,36 @@ proxy-groups:
       - Proxies
       - DIRECT
       - Domestic
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇺🇸 【推荐】IEPL专线美国-奈飞01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇸🇬 ChatGPT-IEPL专线-新加坡02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 🇺🇸 【推荐】上海联通-美国奈飞*01
-      - 【推荐】中转-联通-台北01
-      - 🇯🇵 【推荐】江苏联通-日本专线21
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 🇯🇵 【推荐】移动国际中转-东京01
-      - 【推荐】移动国际中转-台北01
-      - 🇺🇸 【推荐】移动国际中转-洛杉矶01
-      - 🇰🇷 专线-江苏联通-首尔01
-      - 🇸🇬 专线-江苏联通-新加坡01
-      - 🇫🇷 专线-江苏联通-巴黎01
-      - 🇹🇷 专线-江苏联通-土耳其01
-      - 🇹🇼 [直连]台北-Hinet01
-      - 直连-ChatGPT-US01
-      - 🇺🇸 联通直连-美国西雅图07
-      - 🇦🇺 直连-悉尼02
-      - 🇨🇦 直连-蒙特利尔02
-      - 🇩🇪 直连-法兰克福02
-      - 🇫🇷 直连-巴黎02
-      - 🇬🇧 直连-伦敦02
-      - 🇮🇪 直连-爱尔兰02
-      - 🇮🇳 直连-孟买02
-      - 直连-斯德哥尔摩02
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线美国-奈飞01
+      -【推荐】IEPL专线-香港BGP02
+      -ChatGPT-IEPL专线-新加坡02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】上海联通-美国奈飞*01
+      -【推荐】中转-联通-台北01
+      -【推荐】江苏联通-日本专线21
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-东京01
+      -【推荐】移动国际中转-台北01
+      -【推荐】移动国际中转-洛杉矶01
+      -专线-江苏联通-首尔01
+      -专线-江苏联通-新加坡01
+      -专线-江苏联通-巴黎01
+      -专线-江苏联通-土耳其01
+      - 直连-台北-Hinet01
+      -直连-ChatGPT-US01
+      -联通直连-美国西雅图07
+      -直连-悉尼02
+      -直连-蒙特利尔02
+      -直连-法兰克福02
+      -直连-巴黎02
+      -直连-伦敦02
+      -直连-爱尔兰02
+      -直连-孟买02
+      -直连-斯德哥尔摩02
   - name: PayPal
     type: select
     proxies:
@@ -361,36 +365,36 @@ proxy-groups:
     url: http://cp.cloudflare.com/generate_204
     interval: 1800
     proxies:
-      - 🇭🇰 【推荐】IEPL专线-香港BGP01
-      - 🇭🇰 【推荐】IEPL深港专线-HKT01
-      - 🇺🇸 【推荐】IEPL专线美国-奈飞01
-      - 🇭🇰 【推荐】IEPL专线-香港BGP02
-      - 🇸🇬 ChatGPT-IEPL专线-新加坡02
-      - 🇨🇳 【推荐】中转*广州移动-台北*01
-      - 🇭🇰 【推荐】上海CN2GIA-香港HGC*02
-      - 🇭🇰 【推荐】上海联通-香港宽频01
-      - 🇺🇸 【推荐】上海联通-美国奈飞*01
-      - 【推荐】中转-联通-台北01
-      - 🇯🇵 【推荐】江苏联通-日本专线21
-      - 🇭🇰 【推荐】移动国际中转-香港宽频01
-      - 🇯🇵 【推荐】移动国际中转-东京01
-      - 【推荐】移动国际中转-台北01
-      - 🇺🇸 【推荐】移动国际中转-洛杉矶01
-      - 🇰🇷 专线-江苏联通-首尔01
-      - 🇸🇬 专线-江苏联通-新加坡01
-      - 🇫🇷 专线-江苏联通-巴黎01
-      - 🇹🇷 专线-江苏联通-土耳其01
-      - 🇹🇼 [直连]台北-Hinet01
-      - 直连-ChatGPT-US01
-      - 🇺🇸 联通直连-美国西雅图07
-      - 🇦🇺 直连-悉尼02
-      - 🇨🇦 直连-蒙特利尔02
-      - 🇩🇪 直连-法兰克福02
-      - 🇫🇷 直连-巴黎02
-      - 🇬🇧 直连-伦敦02
-      - 🇮🇪 直连-爱尔兰02
-      - 🇮🇳 直连-孟买02
-      - 直连-斯德哥尔摩02
+      -【推荐】IEPL专线-香港BGP01
+      -【推荐】IEPL深港专线-HKT01
+      -【推荐】IEPL专线美国-奈飞01
+      -【推荐】IEPL专线-香港BGP02
+      -ChatGPT-IEPL专线-新加坡02
+      -【推荐】中转*广州移动-台北*01
+      -【推荐】上海CN2GIA-香港HGC*02
+      -【推荐】上海联通-香港宽频01
+      -【推荐】上海联通-美国奈飞*01
+      -【推荐】中转-联通-台北01
+      -【推荐】江苏联通-日本专线21
+      -【推荐】移动国际中转-香港宽频01
+      -【推荐】移动国际中转-东京01
+      -【推荐】移动国际中转-台北01
+      -【推荐】移动国际中转-洛杉矶01
+      -专线-江苏联通-首尔01
+      -专线-江苏联通-新加坡01
+      -专线-江苏联通-巴黎01
+      -专线-江苏联通-土耳其01
+      - 直连-台北-Hinet01
+      -直连-ChatGPT-US01
+      -联通直连-美国西雅图07
+      -直连-悉尼02
+      -直连-蒙特利尔02
+      -直连-法兰克福02
+      -直连-巴黎02
+      -直连-伦敦02
+      -直连-爱尔兰02
+      -直连-孟买02
+      -直连-斯德哥尔摩02
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
