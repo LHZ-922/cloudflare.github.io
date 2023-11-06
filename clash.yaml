@@ -13,7 +13,6 @@ tun:
   auto-route: true
   auto-redir: true
   auto-detect-interface: true
-
 proxies:
   - {name: 🇯🇵 japan.com中转-端口443, server: japan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
   - {name: 🇯🇵 japan.com中转-端口8443, server: japan.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, servername: sg-hk-jp.missyao.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
