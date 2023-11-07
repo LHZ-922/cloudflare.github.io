@@ -1,3 +1,7 @@
+# Clash 的 RESTful API
+external-controller: 192.168.20.2:9090
+# RESTful API 的口令
+secret: 
 # 需要开启 TUN 配置
 tun:
   enable: true
