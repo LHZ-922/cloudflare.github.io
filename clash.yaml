@@ -1,4 +1,6 @@
 # Clash 的 RESTful API
+mixed-port: 7890
+allow-lan: true
 external-controller: 0.0.0.0:9090
 # RESTful API 的口令
 secret: 
