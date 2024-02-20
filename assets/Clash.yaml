@@ -1,3 +1,5 @@
+# port: 7890
+# socks-port: 7891
 mixed-port: 1199
 allow-lan: true
 bind-address: '*'
@@ -6,7 +8,7 @@ log-level: info
 external-controller: '127.0.0.1:9090'
 dns:
     enable: true
-    ipv6: false
+    ipv6: true
     default-nameserver: [223.5.5.5, 119.29.29.29]
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
@@ -15,6 +17,25 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
+  - {name: 🇭🇰 香港 03, server: passport.weibo.cn.e3020.com, port: 28000, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇭🇰 香港 01, server: 183.240.191.108, port: 29802, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇭🇰 香港 02, server: passport.weibo.cn.e3020.com, port: 31039, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇹🇼 台湾 01, server: passport.weibo.cn.e3020.com, port: 58031, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇹🇼 台湾 02, server: passport.weibo.cn.e3020.com, port: 35102, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇺🇸 美国 01 ChatGPT, server: passport.weibo.cn.e3020.com, port: 29301, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇩🇪 德国 01, server: passport.weibo.cn.e3020.com, port: 57381, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇸🇬 新加坡 02, server: passport.weibo.cn.e3020.com, port: 30910, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇹🇼 台湾 03, server: passport.weibo.cn.e3020.com, port: 29083, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇮🇳 印度 01, server: passport.weibo.cn.e3020.com, port: 39207, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇸🇬 新加坡 01, server: passport.weibo.cn.e3020.com, port: 13921, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇦🇺 澳大利亚 01, server: passport.weibo.cn.e3020.com, port: 15764, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇯🇵 日本 01 ChatGPT, server: passport.weibo.cn.e3020.com, port: 29357, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇫🇮 芬兰 01, server: passport.weibo.cn.e3020.com, port: 37382, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇭🇰 香港 10, server: p16.tiktokcdn.com.7602.org, port: 28000, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇭🇰 香港 11, server: p16.tiktokcdn.com.7602.org, port: 31039, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 国内免翻：55jiasu.com, server: p16.tiktokcdn.com.7602.org, port: 28000, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 邀请朋友获得20%佣金奖励, server: p16.tiktokcdn.com.7602.org, port: 31039, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
+  - {name: 🇸🇬 不能用的请自行更新订阅, server: us.lianjianode.cc, port: 21002, client-fingerprint: chrome, type: vmess, uuid: 7ca769a3-5b45-4537-8a56-89b59af04839, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /usa, headers: {Host: us1.luodi.xyz}}}
   - {name: 🇺🇸 美国 01-中转, server: us.lianjianode.cc, port: 21000, client-fingerprint: chrome, type: vmess, uuid: 7ca769a3-5b45-4537-8a56-89b59af04839, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /usa, headers: {Host: us1.luodi.xyz}}}
   - {name: 🇺🇸 美国 02-中转, server: us.lianjianode.cc, port: 34175, client-fingerprint: chrome, type: vmess, uuid: 7ca769a3-5b45-4537-8a56-89b59af04839, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /usa, headers: {Host: us1.luodi.xyz}}}
   - {name: 🇹🇼 台湾 01-中转, server: tw.lianjianode.cc, port: 21003, client-fingerprint: chrome, type: vmess, uuid: 7ca769a3-5b45-4537-8a56-89b59af04839, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hinet, headers: {Host: hinet.luodi.xyz}}}
@@ -29,16 +50,17 @@ proxies:
   - {name: 🇭🇰 香港 02-中转, server: hk.lianjianode.cc, port: 21031, client-fingerprint: chrome, type: vmess, uuid: 7ca769a3-5b45-4537-8a56-89b59af04839, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hongkong, headers: {Host: hk1.luodi.xyz}}}
   - {name: 🇭🇰 香港 03-中转, server: hk.lianjianode.cc, port: 21032, client-fingerprint: chrome, type: vmess, uuid: 7ca769a3-5b45-4537-8a56-89b59af04839, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hongkong, headers: {Host: hk1.luodi.xyz}}}
   - {name: 🇭🇰 香港 04-中转, server: hk.lianjianode.cc, port: 21033, client-fingerprint: chrome, type: vmess, uuid: 7ca769a3-5b45-4537-8a56-89b59af04839, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hongkong, headers: {Host: hk1.luodi.xyz}}}
+  - {name: 距离下次重置剩余：15 天, server: 62.72.188.64, port: 443, client-fingerprint: chrome, type: hysteria2, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, auth: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: www.microsoft.com, skip-cert-verify: false}
   - {name: 🇭🇰 香港, server: 62.72.188.64, port: 443, client-fingerprint: chrome, type: hysteria2, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, auth: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: www.microsoft.com, skip-cert-verify: false}
   - {name: 🇺🇸 美国凤凰城1号 | 0.1x, server: 108.181.23.33, port: 443, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: downloadus1.xn--mes358acgm99l.com, network: tcp}
   - {name: 🇺🇸 美国凤凰城2号 | 0.1x, server: 108.181.23.61, port: 443, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: downloadus2.xn--mes358acgm99l.com, network: tcp}
   - {name: 🇺🇸 美国凤凰城3号 | 0.1x, server: 108.181.24.29, port: 443, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: downloadus3.xn--mes358acgm99l.com, network: tcp}
   - {name: 🇳🇱 荷兰 | 0.1x, server: 176.97.210.253, port: 443, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: downloadnl1.xn--mes358acgm99l.com, network: tcp}
   - {name: 🇩🇪 德国 | 1x, server: 89.163.221.228, port: 443, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: downloadde1.xn--mes358acgm99l.com, network: tcp}
-  - {name: 🇯🇵 日本AWS, server: 43.207.147.216, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: eb9514233f5121ec2a63e8aa20a74a371bb673a2ff5e25fb1991ee00bdd2b5dd0da6d2f9e6.jsjc.sbs, network: tcp}
-  - {name: 🇯🇵 日本AWS2, server: 54.250.253.122, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 0df5f17f273cc460c721c63a3e8ae8bf7a83d80ffbd99aab.jsjc.sbs, network: tcp}
-  - {name: 🇸🇬 新加坡AWS, server: 13.212.214.200, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: d96805f83337003c7ea5fa578de904f0f42d2521e86a37bfdbca6af87cd3a6214185.jsjc.sbs, network: tcp}
-  - {name: 🇸🇬 新加坡AWS2, server: 18.143.159.88, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 49dbd26b5a099ecf10712937669c146747c9.jsjc.sbs, network: tcp}
+  - {name: 🇯🇵 日本AWS, server: 54.238.10.214, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 588672059b8345ccc821447dc2d1d2acc8e2f1c4bf368946dc5d62352d60.jsjc.sbs, network: tcp}
+  - {name: 🇯🇵 日本AWS2, server: 18.181.146.253, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: ee989f9d820aee0e785423930cc1f29b48caa847754be9c5a1f21bef5a6c3e4472ae24b213.jsjc.sbs, network: tcp}
+  - {name: 🇸🇬 新加坡AWS, server: 13.229.55.172, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 31a592853c65ed690cea721df88329e10375f513f6e3ac02472b114a89c98f04d688fd.jsjc.sbs, network: tcp}
+  - {name: 🇸🇬 新加坡AWS2, server: 54.169.74.94, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 7b06ba6c54f3800e163459a444445348584db765fed6ecf724dfc61a68fd3da7b4bc9385b9702e.jsjc.sbs, network: tcp}
   - {name: 🇺🇸 美国凤凰城01 | 0.1x, server: 146.19.21.108, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: j1us1.jsjc.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /jsjc/us1, headers: {Host: j1us1.jsjc.sbs}}}
   - {name: 🇺🇸 美国凤凰城02 | 0.1x, server: 185.162.228.36, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: j1us2.jsjc.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /jsjc/us2, headers: {Host: j1us2.jsjc.sbs}}}
   - {name: 🇺🇸 美国凤凰城03 | 0.1x, server: 45.131.209.202, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: j1us3.jsjc.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /jsjc/us3, headers: {Host: j1us3.jsjc.sbs}}}
@@ -47,36 +69,6 @@ proxies:
   - {name: 🇩🇪 德国, server: 45.131.7.126, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: j1de1.jsjc.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /jsjc/de1, headers: {Host: j1de1.jsjc.sbs}}}
   - {name: 🇳🇱 荷兰 | x0.1——招募代理，合作共赢, server: 104.17.175.159, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: jnl1.jsjc.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /jsjc/nl1, headers: {Host: jnl1.jsjc.sbs}}}
   - {name: 🇹🇼 台湾｜邀请朋友使用，赚佣金, server: hinet.djjsvip.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: download.xn--mes358acgm99l.com, skip-cert-verify: false}
-  - {name: 🇯🇵 japan.com中转-端口443, server: japan.com, port: 443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, skip-cert-verify: false, servername: sg-hk-jp.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 🇯🇵 japan.com中转-端口8443, server: japan.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, skip-cert-verify: false, servername: sg-hk-jp.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 🇯🇵 japan.com中转-端口2053, server: japan.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, skip-cert-verify: false, servername: sg-hk-jp.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 🇯🇵 japan.com中转-端口2083, server: japan.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, skip-cert-verify: false, servername: sg-hk-jp.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 🇯🇵 japan.com中转-端口2087, server: japan.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, skip-cert-verify: false, servername: sg-hk-jp.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: 🇯🇵 japan.com中转-端口2096, server: japan.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: c9bf2d31-74e7-470d-99fd-bed05eb2b69f, tls: true, tfo: false, skip-cert-verify: false, servername: sg-hk-jp.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg-hk-jp.missyao.top}}}
-  - {name: malaysia.com中转-端口443, server: malaysia.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, skip-cert-verify: false, servername: usw-uk-ed.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: malaysia.com中转-端口8443, server: malaysia.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, skip-cert-verify: false, servername: usw-uk-ed.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: malaysia.com中转-端口2053, server: malaysia.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, skip-cert-verify: false, servername: usw-uk-ed.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: malaysia.com中转-端口2083, server: malaysia.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, skip-cert-verify: false, servername: usw-uk-ed.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: malaysia.com中转-端口2087, server: malaysia.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, skip-cert-verify: false, servername: usw-uk-ed.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: malaysia.com中转-端口2096, server: malaysia.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 74699d01-e41b-4bcc-a9a0-9775ad184e0b, tls: true, tfo: false, skip-cert-verify: false, servername: usw-uk-ed.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usw-uk-ed.missyao.top}}}
-  - {name: 🇸🇬 singapore.com中转-端口443, server: singapore.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇸🇬 singapore.com中转-端口8443, server: singapore.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇸🇬 singapore.com中转-端口2053, server: singapore.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇸🇬 singapore.com中转-端口2083, server: singapore.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇸🇬 singapore.com中转-端口2087, server: singapore.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇸🇬 singapore.com中转-端口2096, server: singapore.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇷🇺 russia.com中转-端口443, server: russia.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇷🇺 russia.com中转-端口8443, server: russia.com, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇷🇺 russia.com中转-端口2053, server: russia.com, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇷🇺 russia.com中转-端口2083, server: russia.com, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇷🇺 russia.com中转-端口2087, server: russia.com, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇷🇺 russia.com中转-端口2096, server: russia.com, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇮🇸 time.is中转-端口443, server: time.is, port: 443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇮🇸 time.is中转-端口8443, server: time.is, port: 8443, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇮🇸 time.is中转-端口2053, server: time.is, port: 2053, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇮🇸 time.is中转-端口2083, server: time.is, port: 2083, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇮🇸 time.is中转-端口2087, server: time.is, port: 2087, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
-  - {name: 🇮🇸 time.is中转-端口2096, server: time.is, port: 2096, client-fingerprint: chrome, type: vless, uuid: 0af2108d-c57c-4563-81e3-3dcdaef9c272, tls: true, tfo: false, skip-cert-verify: false, servername: all-ipv6-ipv4.missyao.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: all-ipv6-ipv4.missyao.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -92,6 +84,25 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 🇭🇰 香港 03
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇹🇼 台湾 01
+      - 🇹🇼 台湾 02
+      - 🇺🇸 美国 01 ChatGPT
+      - 🇩🇪 德国 01
+      - 🇸🇬 新加坡 02
+      - 🇹🇼 台湾 03
+      - 🇮🇳 印度 01
+      - 🇸🇬 新加坡 01
+      - 🇦🇺 澳大利亚 01
+      - 🇯🇵 日本 01 ChatGPT
+      - 🇫🇮 芬兰 01
+      - 🇭🇰 香港 10
+      - 🇭🇰 香港 11
+      - 国内免翻：55jiasu.com
+      - 邀请朋友获得20%佣金奖励
+      - 🇸🇬 不能用的请自行更新订阅
       - 🇺🇸 美国 01-中转
       - 🇺🇸 美国 02-中转
       - 🇹🇼 台湾 01-中转
@@ -106,6 +117,7 @@ proxy-groups:
       - 🇭🇰 香港 02-中转
       - 🇭🇰 香港 03-中转
       - 🇭🇰 香港 04-中转
+      - 距离下次重置剩余：15 天
       - 🇭🇰 香港
       - 🇺🇸 美国凤凰城1号 | 0.1x
       - 🇺🇸 美国凤凰城2号 | 0.1x
@@ -124,36 +136,6 @@ proxy-groups:
       - 🇩🇪 德国
       - 🇳🇱 荷兰 | x0.1——招募代理，合作共赢
       - 🇹🇼 台湾｜邀请朋友使用，赚佣金
-      - 🇯🇵 japan.com中转-端口443
-      - 🇯🇵 japan.com中转-端口8443
-      - 🇯🇵 japan.com中转-端口2053
-      - 🇯🇵 japan.com中转-端口2083
-      - 🇯🇵 japan.com中转-端口2087
-      - 🇯🇵 japan.com中转-端口2096
-      - malaysia.com中转-端口443
-      - malaysia.com中转-端口8443
-      - malaysia.com中转-端口2053
-      - malaysia.com中转-端口2083
-      - malaysia.com中转-端口2087
-      - malaysia.com中转-端口2096
-      - 🇸🇬 singapore.com中转-端口443
-      - 🇸🇬 singapore.com中转-端口8443
-      - 🇸🇬 singapore.com中转-端口2053
-      - 🇸🇬 singapore.com中转-端口2083
-      - 🇸🇬 singapore.com中转-端口2087
-      - 🇸🇬 singapore.com中转-端口2096
-      - 🇷🇺 russia.com中转-端口443
-      - 🇷🇺 russia.com中转-端口8443
-      - 🇷🇺 russia.com中转-端口2053
-      - 🇷🇺 russia.com中转-端口2083
-      - 🇷🇺 russia.com中转-端口2087
-      - 🇷🇺 russia.com中转-端口2096
-      - 🇮🇸 time.is中转-端口443
-      - 🇮🇸 time.is中转-端口8443
-      - 🇮🇸 time.is中转-端口2053
-      - 🇮🇸 time.is中转-端口2083
-      - 🇮🇸 time.is中转-端口2087
-      - 🇮🇸 time.is中转-端口2096
   - name: 📲 电报消息
     type: select
     proxies:
@@ -344,6 +326,11 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
+      - 🇭🇰 香港 03
+      - 🇭🇰 香港 01
+      - 🇭🇰 香港 02
+      - 🇭🇰 香港 10
+      - 🇭🇰 香港 11
       - 🇭🇰 香港 01-中转
       - 🇭🇰 香港 02-中转
       - 🇭🇰 香港 03-中转
@@ -352,6 +339,7 @@ proxy-groups:
   - name: 🇯🇵 日本节点
     type: select
     proxies:
+      - 🇯🇵 日本 01 ChatGPT
       - 🇯🇵 日本 01-中转
       - 🇯🇵 日本 02-中转
       - 🇯🇵 日本 03-中转
@@ -362,6 +350,7 @@ proxy-groups:
   - name: 🇺🇲 美国节点
     type: select
     proxies:
+      - 🇺🇸 美国 01 ChatGPT
       - 🇺🇸 美国 01-中转
       - 🇺🇸 美国 02-中转
       - 🇺🇸 美国凤凰城1号 | 0.1x
@@ -373,6 +362,8 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
+      - 🇸🇬 新加坡 02
+      - 🇸🇬 新加坡 01
       - 🇸🇬 新加坡 01-中转
       - 🇸🇬 新加坡 02-中转
       - 🇸🇬 新加坡AWS
@@ -381,6 +372,9 @@ proxy-groups:
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
+      - 🇹🇼 台湾 01
+      - 🇹🇼 台湾 02
+      - 🇹🇼 台湾 03
       - 🇹🇼 台湾 01-中转
       - 🇹🇼 台湾 02-中转
       - 🇹🇼 台湾｜邀请朋友使用，赚佣金
