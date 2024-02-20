@@ -2,20 +2,20 @@
 # socks-port: 7891
 mixed-port: 1199
 allow-lan: true
-bind-address: '*'
-mode: rule
+mode: Rule
 log-level: info
-external-controller: '127.0.0.1:9090'
+external-controller: :9090
 dns:
-    enable: true
-    ipv6: true
-    default-nameserver: [223.5.5.5, 119.29.29.29]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+  enabled: true
+  ipv6: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 proxies:
   - {name: 🇭🇰 香港 03, server: passport.weibo.cn.e3020.com, port: 28000, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
   - {name: 🇭🇰 香港 01, server: 183.240.191.108, port: 29802, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3a8ee526-6b1f-4874-828c-8f808239b8ea, tfo: false}
@@ -57,10 +57,10 @@ proxies:
   - {name: 🇺🇸 美国凤凰城3号 | 0.1x, server: 108.181.24.29, port: 443, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: downloadus3.xn--mes358acgm99l.com, network: tcp}
   - {name: 🇳🇱 荷兰 | 0.1x, server: 176.97.210.253, port: 443, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: downloadnl1.xn--mes358acgm99l.com, network: tcp}
   - {name: 🇩🇪 德国 | 1x, server: 89.163.221.228, port: 443, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: downloadde1.xn--mes358acgm99l.com, network: tcp}
-  - {name: 🇯🇵 日本AWS, server: 54.238.10.214, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 588672059b8345ccc821447dc2d1d2acc8e2f1c4bf368946dc5d62352d60.jsjc.sbs, network: tcp}
-  - {name: 🇯🇵 日本AWS2, server: 18.181.146.253, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: ee989f9d820aee0e785423930cc1f29b48caa847754be9c5a1f21bef5a6c3e4472ae24b213.jsjc.sbs, network: tcp}
-  - {name: 🇸🇬 新加坡AWS, server: 13.229.55.172, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 31a592853c65ed690cea721df88329e10375f513f6e3ac02472b114a89c98f04d688fd.jsjc.sbs, network: tcp}
-  - {name: 🇸🇬 新加坡AWS2, server: 54.169.74.94, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 7b06ba6c54f3800e163459a444445348584db765fed6ecf724dfc61a68fd3da7b4bc9385b9702e.jsjc.sbs, network: tcp}
+  - {name: 🇯🇵 日本AWS, server: 54.238.10.214, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 9e009ee8d73937e8cb7deb56ef36a35dac5388d1679d.jsjc.sbs, network: tcp}
+  - {name: 🇯🇵 日本AWS2, server: 18.181.146.253, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 368909424933403d241487e4f636be77018febc009d0659946cbff34.jsjc.sbs, network: tcp}
+  - {name: 🇸🇬 新加坡AWS, server: 13.229.55.172, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: d1884b57c9fb428bbec30baa0da915805c2b97b5c3cb599e92c78551cdef8d751f4ff86ebb0165.jsjc.sbs, network: tcp}
+  - {name: 🇸🇬 新加坡AWS2, server: 54.169.74.94, port: 6600, client-fingerprint: chrome, type: vless, uuid: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: 3406c466cb4d1bb8cc88deb8b11ff27d619dd66a00360b07a6d2cf27c7.jsjc.sbs, network: tcp}
   - {name: 🇺🇸 美国凤凰城01 | 0.1x, server: 146.19.21.108, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: j1us1.jsjc.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /jsjc/us1, headers: {Host: j1us1.jsjc.sbs}}}
   - {name: 🇺🇸 美国凤凰城02 | 0.1x, server: 185.162.228.36, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: j1us2.jsjc.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /jsjc/us2, headers: {Host: j1us2.jsjc.sbs}}}
   - {name: 🇺🇸 美国凤凰城03 | 0.1x, server: 45.131.209.202, port: 443, client-fingerprint: chrome, type: trojan, password: 1e94aa48-99c5-4d5d-9016-63b8ffcbcce6, sni: j1us3.jsjc.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /jsjc/us3, headers: {Host: j1us3.jsjc.sbs}}}
