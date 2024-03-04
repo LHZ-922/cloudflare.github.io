@@ -1,4 +1,7 @@
 # Clash 的 RESTful API
+#port: 7892
+#socks-port: 7891
+mixed-port: 7890
 allow-lan: true
 external-controller: 0.0.0.0:9090
 # RESTful API 的口令
