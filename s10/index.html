@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title></title>
+<style>
+    html, body, canvas {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<canvas width="1439" height="634"></canvas>
+<script src="./particle.js"></script>
+<script>
+    new Particle({
+      num: 200,
+      shape: 0.1
+    }).colorfulAnimation()
+</script></body></html>
