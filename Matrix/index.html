@@ -36,7 +36,7 @@
 	</head>
 
 
-		<canvas id="hacker" style="width:100%;height:100%;">请使用最新的浏览器</canvas>
+		<canvas id="hacker" style="width:100%;height:100%;">MissYao矩形阵</canvas>
 	</body>
 
 </html>
@@ -59,7 +59,7 @@
 		var width = hacker.width = screen.width;
 		var height = hacker.height = screen.height;
 		var ctx = hacker.getContext('2d');
-		var num = Math.ceil(width / 12);
+		var num = Math.ceil(width / 10);
 		var y = Array(num).join(0).split('');
 		var draw = function() {
 			ctx.fillStyle = 'rgba(0,0,0,.05)';
@@ -68,10 +68,10 @@
 			ctx.font = '20px Microsoft YaHei';
 			y.map(function(y1,i){
 				var text = String.fromCharCode(65 + Math.random() * 62);
-				var x = i * 20;  
+				var x = i * 18;  
 				var y1 = y[i];
 				ctx.fillText(text, x, y1);
-				y[i] = ( y1 > Math.random() * 50 * height ? 0 : parseInt(y[i]) + 20 );
+				y[i] = ( y1 > Math.random() * 50 * height ? 0 : parseInt(y[i]) + 18 );
 			})
 		}
 
