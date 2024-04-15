@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <head>
 <meta charset="utf-8" />
-<title>HTML5 canvas和javascript矩阵雨动画效果</title>
+<title>矩阵</title>
 <style type="text/css">
 /*basic reset*/
 * {margin: 0; padding: 0;}
@@ -18,10 +18,10 @@ var ctx = c.getContext("2d");
 
 c.height = window.innerHeight;
 c.width = window.innerWidth;
-var chinese = "AaBbCcDdEdFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYy.Zz1234567890<>{}[]()!@#$%^&*";
+var chinese = "AaBbCcDdEdFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYy.Zz1234567890<>{}[]()~!@#$%^&*あいうえおかきくけこさしすせそたちつてとはひふへほなにぬねのまみむめもらりるれろやyゆyよyんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽアイウエオカキクケコサシスセソタチツテトハヒフヘホナニヌネノマミムメモラリルレロヤユヨンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ";
 chinese = chinese.split("");
 
-var font_size = 10;
+var font_size = 20;
 var columns = c.width/font_size;
 //an array of drops - one per column
 var drops = [];
