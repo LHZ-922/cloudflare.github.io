@@ -68,10 +68,10 @@
 			ctx.font = '20px Microsoft YaHei';
 			y.map(function(y1,i){
 				var text = String.fromCharCode(65 + Math.random() * 62);
-				var x = i * 12;  
+				var x = i * 20;  
 				var y1 = y[i];
 				ctx.fillText(text, x, y1);
-				y[i] = ( y1 > Math.random() * 10 * height ? 0 : parseInt(y[i]) + 12 );
+				y[i] = ( y1 > Math.random() * 15 * height ? 10 : parseInt(y[i]) + 20 );
 			})
 		}
 
